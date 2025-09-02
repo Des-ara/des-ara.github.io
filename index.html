@@ -1,261 +1,624 @@
-<!doctype html>
-<!--questo è un commento-->
+<!Doctype html>
 <html>
 
 <head>
-    <!--head è la parte della pagina che contiene le informazioni-->
-
-    <!-- Set di caratteri -->
     <meta charset="UTF-8">
-
-    <!-- responsive su mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO base -->
     <meta name="description" content="Descrizione della pagina per Google">
     <meta name="keywords" content="html, landing page, esempio">
     <meta name="author" content="Il tuo nome">
 
-    <!-- collegamento foglio di stile CSS personalizzato-->
-    <link rel="stylesheet" href="style.css">
-
-
-
-    <!-- Bootstrap CSS -->
-
+    <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-
-    <!-- Bootstrap Icone -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- Google fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
 
-    <title>Uno, due, tre Prova</title>
+    <title>Il mio CV</title>
+
 </head>
 
 <body>
-
-    <div class="container">
-        <img src="https://static6.depositphotos.com/1148595/647/v/950/depositphotos_6475407-stock-illustration-tree-stylized.jpg"
-            alt="immagine logo">
-        <!--body è la parte che visualizziamo nella pagina, il contenuto della pagine web-->
-        <div id="top"></div>
-
+    <div id="home"></div>
+    <div class="container-body">
+        <!-- Inserire immagine -->
         <header>
-            <!--header contiene gli strumenti di navigazione(come il menù, intestazione)-->
-
-            <nav>
-                <!--nav contiene i link di navigazione-->
-                <a href="#home">Home</a>
-                <a href="#chisiamo">Chi siamo</a>
-                <a href="#servizi">Servizi</a>
-                <a href="#contatti">Contatti</a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="first-nav">
+                <div class="container">
+                    <i class="bi bi-flower2 fs-1 me-5"></i>
+                    <a class="navbar-brand" href="#ilmiocv">Desara Duka</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#chisono">Chi sono</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#competenze">Competenze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#esperienze">Esperienze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contatti">Contatti</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-
-            <!-- Nav Bootstrap -->
-
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist"></div>
-            </nav>
-
         </header>
 
         <main>
-            <!--dove viene messo il contenuto principale della pagina-->
-            <h1>Benvenuto nella pagina di Prova</h1>
-            <h2>Giochiamo insieme</h2>
-            <h3>Sei pronto?</h3>
-            <p>Questo è un paragrafo di:<br> Prova</p>
+            <section id="chisono">
+            
 
-            <button class="btn btn-dark">Invia</button>
-            <button class="btn btn-danger">Attenzione!</button>
-            <button class="btn btn-custom">Attenzione!</button>
-
-            <div class="border border-primary">--------</div>
-            <!-- Esempio di componente -->
-            <div class="alert alert-primary" role="alert">Un alert check</div>
-
-            <h2>Esempio di una Lista non ordinata:</h2>
-            <ul>
-                <li>Esempio</li>
-                <li>Altro esempio</li>
-                <li>Un altro esempio</li>
-            </ul>
-
-            <h2>Esempio di una Lista ordinata:</h2>
-            <ol>
-                <li><i>Esempio</i></li>
-                <li>Altro esempio</li>
-                <li>Un altro esempio</li>
-            </ol>
-
-            <!--esempio di link-->
-            <h2>Questo è un link</h2>
-            <p id="collegamento"><b>Questo è un collegamento alla pagina di <a href="#">Facebook</a></b></p>
-
-
-            <!--esempio di sezione-->
-            <div class="shadow">
-                <section id="chisiamo">
-                    <h1><i class="bi bi-airplane.engines-fill"></i>Sezione chi siamo</h1>
-                    <p>Sezione di esempio
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus pariatur voluptates, odio
-                        veniam
-                        voluptatum perspiciatis at hic! Eius optio quibusdam eum, quidem quas commodi accusamus
-                        excepturi
-                        aliquam voluptatum? Quos, natus.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus pariatur voluptates, odio
-                        veniam
-                        voluptatum perspiciatis at hic! Eius optio quibusdam eum, quidem quas commodi accusamus
-                        excepturi
-                        aliquam voluptatum? Quos, natus.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                        Est aliquid earum consectetur odit soluta possimus!<br>
-                        Sint laborum laboriosam nulla magni perferendis, odio consequuntur reiciendis libero aut ratione
-                        impedit
-                        cumque mollitia!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
-                        Ab, obcaecati error dolorum est debitis soluta quas. Quibusdam obcaecati necessitatibus
-                        cupiditate
-                        doloremque reprehenderit, pariatur laborum error, inventore dolor dignissimos in doloribus!
-                    </p>
-                    <!--creo un collegamento ad inzio pagina-->
-                    <p><a href="#top">Torna all'inizio</a></p>
-                </section>
-            </div>
-
-            <section id="servizi">
-                <h1>Sezione Servizi</h1>
-                <p>Esempio della sezione Servizi
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Est aliquid earum consectetur odit soluta possimus!<br>
-                    Sint laborum laboriosam nulla magni perferendis, odio consequuntur reiciendis libero aut ratione
-                    impedit
-                    cumque mollitia!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Est aliquid earum consectetur odit soluta possimus!<br>
-                    Sint laborum laboriosam nulla magni perferendis, odio consequuntur reiciendis libero aut ratione
-                    impedit
-                    cumque mollitia!
+                 <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-person-square me-2 fs-3"></i>
+                        <h1 class="mb-1">Chi sono</h1>
+                    </div>
+                </div>
+                <p class="mt-3">Ciao! Sono un front end developer alle prime armi, appassionato di creare interfacce web intuitive e
+                    accattivanti.<br>
+                    Ho recentemente iniziato il mio percorso nel mondo dello sviluppo front end, studiando HTML, CSS e
+                    JavaScript per dare vita alle idee e ai progetti digitali.<br>
+                    Amo imparare nuove tecnologie e migliorare le mie competenze, con l'obiettivo di diventare un
+                    professionista competente e creativo nel campo dello sviluppo web.<br>
+                    Sono entusiasta di collaborare e di crescere nel settore, portando sempre un tocco di innovazione e
+                    passione in ogni progetto!
                 </p>
-                <p><a href="#top">Torna all'inizio</a></p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="#contatto">
+                        <button class="btn contatto-link mt-5" type="button">Contattami!</button>
+                    </a>
+                </div>
             </section>
+
+
+            <section id="competenze">
+
+                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-graph-up-arrow me-2 fs-3"></i>
+                
+                <h1 class="mb-1">Le mie competenze</h1>
+                </div>
+                </div>
+                <!-- Le card -->
+                <!-- 
+                <div class="card-group">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Html, Css & JavaScript</h5>
+                            <p class="card-text">Sono un front end developer con solide competenze in HTML e CSS.<br>
+                                Ho esperienza nella creazione di strutture semantiche e accessibili, garantendo che le
+                                pagine siano facilmente comprensibili sia per gli utenti che per i motori di
+                                ricerca.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">C#</h5>
+                            <p class="card-text"> Conoscenze di base in C#, acquisite attraverso lo studio e
+                                l’esperienza
+                                pratica.<br>
+                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
+                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
+                                C#. </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Networking e Protocolli</h5>
+                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
+                                pratica.<br>
+                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
+                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
+                                C#.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sviluppo Web</h5>
+                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
+                                pratica.<br>
+                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
+                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
+                                C#.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-group">
+                    <div class="card p-1">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Dot Net Web App</h5>
+                            <p class="card-text">Sono un front end developer con solide competenze in HTML e CSS.<br>
+                                Ho esperienza nella creazione di strutture semantiche e accessibili, garantendo che le
+                                pagine siano facilmente comprensibili sia per gli utenti che per i motori di
+                                ricerca.</p>
+                        </div>
+                    </div>
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestione delle Code nei Microservizi</h5>
+                            <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine web.<br>
+                                Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire eventi e
+                                sviluppare applicazioni web interattive.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title">DEPLOY</h5>
+                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
+                                pratica.<br>
+                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
+                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
+                                C#.</p>
+                        </div>
+                    </div>
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title"> Containerizzazione e Orchestrazione</h5>
+                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
+                                pratica.<br>
+                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
+                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
+                                C#.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-group">
+                    <div class="card p-1">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Devops</h5>
+                            <p class="card-text">Sono un front end developer con solide competenze in HTML e CSS.<br>
+                                Ho esperienza nella creazione di strutture semantiche e accessibili, garantendo che le
+                                pagine siano facilmente comprensibili sia per gli utenti che per i motori di
+                                ricerca.</p>
+                        </div>
+                    </div>
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Persistenza Dati</h5>
+                            <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine web.<br>
+                                Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire eventi e
+                                sviluppare applicazioni web interattive.</p>
+                        </div>
+                    </div>
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title">WordPress</h5>
+                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
+                                pratica.<br>
+                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
+                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
+                                C#.</p>
+                        </div>
+                    </div>
+                </div>    -->
+
+
+
+
+
+                <div id="carouselExample" class="carousel slide mb-5 mt-5" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="card-group gap-5">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Html & Css</h5>
+                                        <p class="card-text">Sono un front end developer con solide competenze in HTML e
+                                            CSS.<br>
+                                            Ho esperienza nella creazione di strutture semantiche e accessibili,
+                                            garantendo che le
+                                            pagine siano facilmente comprensibili sia per gli utenti che per i motori di
+                                            ricerca.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">C#</h5>
+                                        <p class="card-text"> Conoscenze di base in C#, acquisite attraverso lo studio e
+                                            l’esperienza
+                                            pratica.<br>
+                                            Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
+                                            strutture di
+                                            controllo e le classi, e sono in grado di comprendere e scrivere codice
+                                            semplice in
+                                            C#. </p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Networking e Protocolli</h5>
+                                        <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e
+                                            l’esperienza
+                                            pratica.<br>
+                                            Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
+                                            strutture di
+                                            controllo e le classi, e sono in grado di comprendere e scrivere codice
+                                            semplice in
+                                            C#.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div class="card-group gap-5">
+
+                                <div class="card p-1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sviluppo Web</h5>
+                                        <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e
+                                            l’esperienza
+                                            pratica.<br>
+                                            Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
+                                            strutture
+                                            di
+                                            controllo e le classi, e sono in grado di comprendere e scrivere codice
+                                            semplice
+                                            in
+                                            C#.</p>
+                                    </div>
+                                </div>
+
+                                <div class="card p-1">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dot Net Web App</h5>
+                                        <p class="card-text">Sono un front end developer con solide competenze in HTML e
+                                            CSS.<br>
+                                            Ho esperienza nella creazione di strutture semantiche e accessibili,
+                                            garantendo
+                                            che le
+                                            pagine siano facilmente comprensibili sia per gli utenti che per i motori di
+                                            ricerca.</p>
+                                    </div>
+                                </div>
+
+                                <div class="card p-1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gestione delle Code nei Microservizi</h5>
+                                        <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine
+                                            web.<br>
+                                            Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire
+                                            eventi
+                                            e
+                                            sviluppare applicazioni web interattive.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div class="card-group gap-5">
+
+                                <div class="card p-1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">DEPLOY</h5>
+                                        <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e
+                                            l’esperienza
+                                            pratica.<br>
+                                            Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
+                                            strutture di
+                                            controllo e le classi, e sono in grado di comprendere e scrivere codice
+                                            semplice in
+                                            C#.</p>
+                                    </div>
+                                </div>
+
+                                <div class="card p-1">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Containerizzazione e Orchestrazione</h5>
+                                        <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e
+                                            l’esperienza
+                                            pratica.<br>
+                                            Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
+                                            strutture di
+                                            controllo e le classi, e sono in grado di comprendere e scrivere codice
+                                            semplice in
+                                            C#.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="card p-1">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Devops</h5>
+                                        <p class="card-text">Sono un front end developer con solide competenze in HTML e
+                                            CSS.<br>
+                                            Ho esperienza nella creazione di strutture semantiche e accessibili,
+                                            garantendo che le
+                                            pagine siano facilmente comprensibili sia per gli utenti che per i motori di
+                                            ricerca.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div class="card-group gap-5">
+
+                                <div class="card p-1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Persistenza Dati</h5>
+                                        <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine
+                                            web.<br>
+                                            Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire
+                                            eventi e
+                                            sviluppare applicazioni web interattive.</p>
+                                    </div>
+                                </div>
+                                <div class="card p-1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">WordPress</h5>
+                                        <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo
+                                            studio e
+                                            l’esperienza
+                                            pratica.<br>
+                                            Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
+                                            strutture di
+                                            controllo e le classi, e sono in grado di comprendere e scrivere codice
+                                            semplice in
+                                            C#.</p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JavaScript</h5>
+                                        <p class="card-text">Sono un front end developer con solide competenze in HTML e
+                                            CSS.<br>
+                                            Ho esperienza nella creazione di strutture semantiche e accessibili,
+                                            garantendo che le
+                                            pagine siano facilmente comprensibili sia per gli utenti che per i motori di
+                                            ricerca.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon me-5"></span>
+                        <span>Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon ms-5" aria-hidden="true"></span>
+                        <span>Next</span>
+                    </button>
+                </div>
+
+
+                <div class="skill-container">
+
+                    <div class="container text-center">
+                        <div class="row justify-content-center gap-2" id="riga">
+                            <div class="col-5 p-5" id="contorno">
+                                <h3 class="pb-4">Soft Skills</h3>
+
+                                <p><b>Comunicazione efficace</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                                <p class="mt-4"><b>Problem solving</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 45%"></div>
+                                </div>
+                                <p class="mt-4"><b>Teamwork</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                                <p class="mt-4"><b>Gestione del tempo</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-1"></div>
+
+                            <div class="col-5 p-5" id="contorno">
+                                <h3 class="pb-4">Competenze Linguistiche</h3>
+
+                                <p><b>Albanese</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                                <p class="mt-4"><b>Italiano</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                                <p class="mt-4"><b>Inglese</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                                <p class="mt-4"><b>Spagnolo</b></p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="home-link mt-5"><a href="#home">Torna nella home</a></p>
+            </section>
+
+
+
+            <section id="esperienze">
+                <h1>Esperienze lavorative</h1>
+
+                <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <div class="esperienza">Esperienza 1</div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Front End Developer presso WebSolutions (2022 - presente).<br>
+                                    Collaborato alla creazione e al miglioramento di interfacce utente per diversi
+                                    clienti, utilizzando HTML, CSS e JavaScript.<br>
+                                    Implementato design responsive per garantire un’ ottima esperienza su dispositivi
+                                    desktop e mobile.<br>
+                                    Ottimizzato le performance delle pagine web, riducendo i tempi di caricamento del
+                                    30%.<br>
+                                    Collaborato con il team di back end per integrare API e funzionalità dinamiche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <div class="esperienza">Esperienza 2</div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Stage come Front End Intern presso CreativeWeb (2021 - 2022).<br>
+                                    Supportato il team di sviluppo nella realizzazione di landing page e siti web
+                                    promozionali.<br>
+                                    Imparato a usare framework come React e Vue.js sotto la supervisione dei senior
+                                    developer.<br>
+                                    Partecipato a riunioni di progettazione e brainstorming per migliorare l’usabilità
+                                    dei progetti.<br>
+                                    Gestito piccole attività di testing e debugging per garantire la qualità del
+                                    prodotto finale.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <div class="esperienza">Esperienza 3</div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Progetto personale di sviluppo di un portfolio online (2020).<br>
+                                    Creato un sito web personale per mostrare i propri lavori e competenze, utilizzando
+                                    HTML, CSS e JavaScript.<br>
+                                    Implementato funzionalità interattive come gallerie di immagini e moduli di
+                                    contatto.<br>
+                                    Ottimizzato il sito per i motori di ricerca (SEO) e per i dispositivi mobili.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="home-link"><a href="#home">Torna nella home</a></p>
+            </section>
+
 
             <section id="contatti">
-                <h1>Sezione Contatti</h1>
-                <p>Esempio della sezione Contatti<br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-                    Commodi quod omnis porro quam quisquam eum at magni ullam dolor iure, aspernatur, officia ea ex
-                    neque.<br>
-                    Architecto corporis maxime saepe magni.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
-                    Perspiciatis dolorum voluptas sint, nisi iste tempora tenetur rerum, reprehenderit molestiae
-                    exercitationem incidunt possimus natus voluptates labore nesciunt quos odit ab. Ipsa.
-                </p>
-                <p><a href="#top">Torna all'inizio</a></p>
-            </section>
-
-            <!--<div class="invisible">-->
-            <h1 class="titolo-tab">Tabella</h1>
-            <!--<p>th = table header</p>-->
-            <!-- <p>td = table data</p> -->
-            <table>
-                <tr>
-                    <th>Intestazione 1</th>
-                    <th>Intestazione 2</th>
-                </tr>
-
-                <tr>
-                    <td>Cella 1</td>
-                    <td>Cella 2</td>
-
-                </tr>
-            </table>
-
-            <!-- uso di div(contenitori dinamici) invece di table -->
-            <h1>Div</h1>
-            <div class="div-box">
-                <div class="box1">Box 1</div>
-                <div class="box2">Box 2</div>
-                <div class="box3">Box 3</div>
-                <div class="box4">Box 4</div>
-            </div>
-
-            <!-- Uso di Grid -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        1 di 2
-                    </div>
-                    <div class="col-8">
-                        2 di 2
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-envelope-exclamation me-2 fs-3"></i>
+                        <h1 class="mb-1">Contatti</h1>
                     </div>
                 </div>
-            </div>
+                <p class="mt-4">Inserisci il tuo nome e il tuo indirizzo e-mail per essere ricontattato!</p>
+                <!-- Inserisco la form per essere ricontatti -->
+                <div id="form-container">
+                    <form class="row gy-2 gx-3 align-items-center" id="form">
+                        <div class="col-auto">
+                            <label class="visually-hidden" for="autoSizingInput">Nome e Cognome</label>
+                            <input type="text" class="form-control" id="autoSizingInput" placeholder="Mario Rossi">
+                        </div>
+                        <div class="col-auto">
+                            <label class="visually-hidden" for="autoSizingInputGroup">E-mail address</label>
+                            <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" class="form-control" id="autoSizingInputGroup"
+                                    placeholder="E-mail address">
+                            </div>
+                        </div>
 
+                        <div class="col-auto" id="contatto">
+
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="invio"><b>Invio</b></button>
+
+                        </div>
+                    </form>
+                </div><br>
+                <p class="home-link"><a href="#home">Torna nella home</a></p>
+            </section>
         </main>
 
-        <hr>
-
-        <div class="card-group">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-                    </p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-        </div>
 
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <i class="bi bi-wifi fs-1"></i>
-                    </div>
-                    <div class="col-6">
-                        <i class="bi bi-tux fs-1"></i>
-                    </div>
-
-                    <!--contiene informazioni di indirizzo, p.i. ecc-->
-                    <p>Questo è il footer</p>
+            <div class="social-icon">
+                <div class="row gap-2">
+                    <div class="col-3" id="icone"><i class="bi bi-github fs-1"></i></div>
+                    <div class="col-1"></div>
+                    <div class="col-3" id="icone"><i class="bi bi-linkedin fs-1"></i></div>
+                    <div class="col-1"></div>
+                    <div class="col-3" id="icone"><i class="bi bi-twitter fs-1"></i></div>
+                </div>
+            </div>
         </footer>
     </div>
-
 </body>
-
-</html>

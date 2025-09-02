@@ -1,229 +1,225 @@
-/* Impostazioni base */
 body {
-  font-family: "DM Sans", sans-serif;
-  margin: 20px;   /*il margine è lo spazio esterno*/
-  padding: 0px;   /*il padding è lo spazio interno*/
-  line-height: 1.5;  /*altezza della line(spazio tra un riga e l'altra)*/
-  background-color: #bcffd0;
-  text-align: center;
+     font-family: "DM Sans", sans-serif;
+    background-color: #004a2f;
+    color:aliceblue;
+    margin: 40px;
+    padding: 0px;  
 }
 
+main {
+    box-shadow: 5px 20px 25px 20px  #27b581 !important;
+    padding: 5px 50px 5px 50px !important;
+    
+}
 
 /* NAVBAR */
-nav {
-  padding: 15px;
-  background-color: #9cffb9;
-  text-align: center;   /*altri valori sono left, right, justify*/
+header {
+    position: sticky;
+    top: 5px;
+    z-index: 100;
 }
 
-nav a {
-    text-decoration: none;
-    margin: 0 15px 25px;
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+}
+
+.nav-item {
+    font-size: 20px;
     font-weight: bold;
-    font-size: 24px;
-    transition: color 0.5s;  /*ritarda di 5sec il cambia di colore quando ci passo sopra*/
 }
 
-nav a:hover {
-    color: #37b137;
+.navbar-brand {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 
+.bi-flower2 {
+   color: #004a2f;
+}
 
-/* SEZIONI */
+
+/* SECTIONS */
 section {
-  padding: 2.5vw 1.5vw;
-  background-color: #cefddc;
-  border: 1px dotted  #00ff4c;
-}
-
-section:nth-child(even) {
-    background-color: #a0fcbb;   /* nth-child seleziona gli elementi in base alla posizione*/
-}
-
-
-
-/* TITOLI */
-h1 {
-   margin-top: 0px;
-   padding: 1.5vw;
-   font-size: 4vw;   /* 5% della larghezza viewport */
-}
-
-h2 {
-   margin-top: 0px;
-   padding: 1vw;
-}
-
-h3 {
-   margin-top: 0px;
-   padding: 1vw;
-}
-
-/* PARAGRAFI */
-p {
-    margin: 1em 0;    /* em unità di misura relativa alla misura del font 1em = 16px*/
-    font-size: 1.5vw;
+    text-align: center;
+    padding: 2.5vw;
+    border: 1px dotted #e8fd96;
+    margin-top: 20px;
+    margin: 70px;
 }
 
 
-/* LISTE */
-ul, ol {
-    margin-left: 1em;
+#contatti {
+    padding: 10px;
+}
+
+.contatto-link {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #27b581 !important;
+  color: black !important;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: width 2s, height 2s, transform 1s;  
+}
+
+.contatto-link:hover {
+    transform: scale(1.1);
+}
+
+
+.card {
+    border: 4px solid #27b581;
+    transition: width 2s, height 2s, transform 1s; 
+}
+
+.card:hover {
+   background-color: #e8fd96;
+   transform: scale(1.1);
+   z-index: 2;
+}
+
+
+.card-title {
+   padding: 10px;
+  background-color: #096c47;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+
+
+.carousel-control-prev-icon {
+    background-color: #4ca987;
+}
+
+.carousel-control-next-icon {
+    background-color: #4ca987;
+}
+
+
+/*Competenze bars*/
+
+#contorno {
+  
+  border: 1px solid #e8fd96;
+  box-shadow: 5px 10px  #e8fd96 !important;
+}
+
+
+
+.skill-container {
+    margin-top: 150px;
+}
+
+.skill-container p {
+    font-size: 16px;
+}
+
+.home-link {
+    margin-top: 40px;
+}
+.home-link a {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.progress-bar {
+    background-color: #27b581;
+    font-size: 16px;
+    color: black;
+    
+}
+
+
+
+
+
+#form {
+    gap: 15px;
+   margin: auto;
+}
+
+#form-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 
-/* LINK */
-a {
-    text-decoration: none;
+#invio {
+    background-color: #e8fd96;
     color: black;
 }
-
-a:hover {
-     color: #37b137;
-     font-weight: bold;
+#invio:hover {
+    font-size: 20px;
+    background-color: #bccd78 !important;
+    color: black !important;
 }
 
 
-/* HEADER */
-header {
-    border-radius: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 2; /*specifica l'ordine di sovrapposizione degli elementi*/
-    border-bottom: 4px solid #00ff4c;
-    margin-bottom: 20px;
-}
-
-
-/* MAIN */
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 2.5vw;
-}
-
-#collegamento {
-    padding-bottom: 20px;
-}
-
-
-/* FOOTER */
 footer {
-    background-color: #9cffb9;
-    padding: 2.5em;
-    border-radius: 10px;
-    border-top: 4px solid #00ff4c;
+    
+    color: black !important;
+    font-size: 1em;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+     background-color: white;
 }
 
 
-img {
-    width: 40%;
-    height: auto;
+#icone {
+ 
+  transition: width 2s, height 2s, transform 2s; 
 }
 
 
-/* STILI TABELLA */
-table {
-    width: 100%;
-    border-collapse: collapse; /* rimuove gli spazi tra le celle */
-    margin: 20px 0;
-    border: 2px dotted #00ff4c;
-    background-color: #cefddc;
-}
-.titolo-tab {
-  margin-top: 15px;
+#icone:hover {
+   
+   transform: scale(2);
 }
 
-th, td {
-   border: 2px dotted #00ff4c;
-    padding: 8px;
-}
 
-th {
-padding: 15px;
-font-size: 18px;
-font-weight: bold;
-background-color: #67ff95;
-}
-
-.div-box {
-     border: 2px dotted #00ff4c;
-     padding: 15px;
-     margin: 15px;
-    background-color: #cefddc;
-}
-
-.div-box div {
-  border: 1px dotted #36fa71;
-}
-
-.box1 {
-    padding: 25px;
-}
-
-.box2 {
-    background-color: #b9f9cc;
-}
-
-.box3 {
-    background-color: #8dfcae;
-}
-
-.box4 {
-    background-color: #67ff95;
-}
-
-div {
+.accordion-button {
+   
+    margin: -5px;
     border: 1px solid black;
 }
 
-/* faccio overwrite del colore del pulsante di Bootstrap con !important */
-.btn-dark {
-    background-color: green !important;
-}
 
-
-.btn-custom {
-    background-color: yellow !important;
-    font-size: 3vw !important;
+.accordion-body {
+    text-align: left;
 }
 
 
 
 
 
-/* media query (dalla più grande alla più piccola) */
 
-/* tablet grande da 1200px in su */
+
 @media (max-width: 1200px) {
     body {
-        background-color: #00ff4c;
+        background-color: #096c47;
     }
 }
 
-
-/* tablet piccolo */
+/* Tablet piccolo (max-width: 992px) */
 @media (max-width: 992px) {
     body {
-        background-color: #28ad50;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    body {
-        background-color: #d5f4de;
-    }
-}
-
-
-@media (max-width: 576px) {
-    body {
-        background-color: #0d7029;
+        background-color: #21825c;
     }
 }
