@@ -35,28 +35,36 @@
         <!-- Inserire immagine -->
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary" id="first-nav">
-                <div class="container">
-                    <i class="bi bi-flower2 fs-1 me-5"></i>
-                    <a class="navbar-brand" href="#ilmiocv">Desara Duka</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-5">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#chisono">Chi sono</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#competenze">Competenze</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#esperienze">Esperienze</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contatti">Contatti</a>
-                            </li>
-                        </ul>
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+
+
+
+                        <a class="navbar-brand d-flex align-items-center gap-3" href="#ilmiocv"><i
+                                class="bi bi-flower2 fs-1 me-2 "></i><h2>Desara Duka</h2></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav gap-3">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" aria-current="page" href="#chisono"><h4>Chi sono</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#competenze"><h4>Competenze</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#esperienze"><h4>Esperienze</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contatti"><h4>Contatti</h4></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -64,15 +72,17 @@
 
         <main>
             <section id="chisono">
-            
 
-                 <div class="d-flex justify-content-center align-items-center">
+
+                <div class="d-flex justify-content-center align-items-center">
                     <div class="d-flex align-items-center gap-3">
                         <i class="bi bi-person-square me-2 fs-3"></i>
                         <h1 class="mb-1">Chi sono</h1>
                     </div>
                 </div>
-                <p class="mt-3">Ciao! Sono un front end developer alle prime armi, appassionato di creare interfacce web intuitive e
+                <div>
+                <p class="mt-3">Ciao! Sono un front end developer alle prime armi, appassionato di creare interfacce web
+                    intuitive e
                     accattivanti.<br>
                     Ho recentemente iniziato il mio percorso nel mondo dello sviluppo front end, studiando HTML, CSS e
                     JavaScript per dare vita alle idee e ai progetti digitali.<br>
@@ -81,10 +91,9 @@
                     Sono entusiasta di collaborare e di crescere nel settore, portando sempre un tocco di innovazione e
                     passione in ogni progetto!
                 </p>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="#contatto">
-                        <button class="btn contatto-link mt-5" type="button">Contattami!</button>
-                    </a>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="#contatto" class="btn contatto-link">Contattami!</a>
                 </div>
             </section>
 
@@ -92,11 +101,11 @@
             <section id="competenze">
 
                 <div class="d-flex justify-content-center align-items-center">
-                <div class="d-flex align-items-center gap-3">
-              <i class="bi bi-graph-up-arrow me-2 fs-3"></i>
-                
-                <h1 class="mb-1">Le mie competenze</h1>
-                </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-graph-up-arrow me-2 fs-3"></i>
+
+                        <h1 class="mb-1">Le mie competenze</h1>
+                    </div>
                 </div>
                 <!-- Le card -->
                 <!-- 
@@ -223,12 +232,12 @@
 
 
 
-
-                <div id="carouselExample" class="carousel slide mb-5 mt-5" data-bs-interval="false">
+                <div class="container-fluid px-0 mt-4">
+                <div id="carouselExample" class="carousel slide position-relative" data-bs-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
 
-                            <div class="card-group gap-5">
+                            <div class="d-flex gap-3 justify-content-center">
 
                                 <div class="card">
                                     <div class="card-body">
@@ -275,9 +284,9 @@
 
                         <div class="carousel-item">
 
-                            <div class="card-group gap-5">
+                            <div class="d-flex gap-3 justify-content-center">
 
-                                <div class="card p-1">
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">Sviluppo Web</h5>
                                         <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e
@@ -293,8 +302,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card p-1">
-
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">Dot Net Web App</h5>
                                         <p class="card-text">Sono un front end developer con solide competenze in HTML e
@@ -307,7 +315,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card p-1">
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">Gestione delle Code nei Microservizi</h5>
                                         <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine
@@ -325,9 +333,9 @@
 
                         <div class="carousel-item">
 
-                            <div class="card-group gap-5">
+                            <div class="d-flex gap-3 justify-content-center">
 
-                                <div class="card p-1">
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">DEPLOY</h5>
                                         <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e
@@ -341,7 +349,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card p-1">
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title"> Containerizzazione e Orchestrazione</h5>
                                         <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e
@@ -356,7 +364,7 @@
                                 </div>
 
 
-                                <div class="card p-1">
+                                <div class="card">
 
                                     <div class="card-body">
                                         <h5 class="card-title">Devops</h5>
@@ -373,9 +381,9 @@
 
                         <div class="carousel-item">
 
-                            <div class="card-group gap-5">
+                            <div class="d-flex gap-3 justify-content-center">
 
-                                <div class="card p-1">
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">Persistenza Dati</h5>
                                         <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine
@@ -385,7 +393,7 @@
                                             sviluppare applicazioni web interattive.</p>
                                     </div>
                                 </div>
-                                <div class="card p-1">
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">WordPress</h5>
                                         <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo
@@ -417,16 +425,17 @@
                         </div>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon me-5"></span>
-                        <span>Previous</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon ms-5" aria-hidden="true"></span>
-                        <span>Next</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
+                </div>
                 </div>
 
 
@@ -496,7 +505,13 @@
 
 
             <section id="esperienze">
-                <h1>Esperienze lavorative</h1>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-reception-4 me-2 fs-3"></i>
+
+                        <h1 class="mb-1">Esperienze lavorative</h1>
+                    </div>
+                </div>
 
                 <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -504,7 +519,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                <div class="esperienza">Esperienza 1</div>
+                                <div class="esperienza fs-4">Esperienza 1</div>
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -526,7 +541,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                                <div class="esperienza">Esperienza 2</div>
+                                <div class="esperienza fs-4">Esperienza 2</div>
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -550,7 +565,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                                <div class="esperienza">Esperienza 3</div>
+                                <div class="esperienza fs-4">Esperienza 3</div>
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -617,7 +632,7 @@
                     <div class="col-1"></div>
                     <div class="col-3" id="icone"><a></a><i class="bi bi-linkedin fs-1"></i></a></div>
                     <div class="col-1"></div>
-                    <div class="col-3" id="icone"><a></a><i class="bi bi-twitter fs-1"></i></a></div>
+                    <div class="col-3" id="icone"><a></a><i class="bi bi-envelope-at-fill fs-1"></i></a></div>
                 </div>
             </div>
         </footer>
