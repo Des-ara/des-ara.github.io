@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Descrizione della pagina per Google">
+    <meta name="description" content="Portfolio CV online di Desara Duka">
     <meta name="keywords" content="html, landing page, esempio">
     <meta name="author" content="Il tuo nome">
 
@@ -25,24 +25,22 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
 
-    <title>Il mio CV</title>
+    <title>Desara Duka - Web Developer Junior, CV Online</title>
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
     <div id="home"></div>
     <div class="container-body">
-        <!-- Inserire immagine -->
+
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="first-nav">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="first-nav">
                 <div class="container-fluid">
                     <div class="d-flex justify-content-between align-items-center w-100">
 
-
-
                         <a class="navbar-brand d-flex align-items-center gap-3" href="#ilmiocv"><i
                                 class="bi bi-flower2 fs-1 me-2 "></i>
-                            <h2>Desara Duka</h2>
+                            <h3>Desara Duka</h3>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -54,23 +52,28 @@
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav gap-3">
                                 <li class="nav-item ">
-                                    <a class="nav-link active" aria-current="page" href="#chisono">
-                                        <h4>Chi sono</h4>
+                                    <a class="nav-link" aria-current="page" href="#chisono">
+                                        <h5>Chi sono</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" aria-current="page" href="#formazione">
+                                        <h5>Formazione</h5>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#competenze">
-                                        <h4>Competenze</h4>
+                                        <h5>Competenze</h5>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#esperienze">
-                                        <h4>Esperienze</h4>
+                                        <h5>Esperienze</h5>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#contatti">
-                                        <h4>Contatti</h4>
+                                        <h5>Contatti</h5>
                                     </a>
                                 </li>
                             </ul>
@@ -81,56 +84,282 @@
         </header>
 
         <main>
-            <section id="chisono">
+            <section id="chisono" class="py-5">
 
 
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center mb-4">
                     <div class="d-flex align-items-center gap-3">
                         <i class="bi bi-person-square me-2 fs-3"></i>
                         <h1 class="mb-1">Chi sono</h1>
                     </div>
                 </div>
 
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
 
-                        <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
-                        
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p class="card-text">Ciao! Sono un front end developer alle prime armi, appassionato di
-                                    creare interfacce
-                                    web
-                                    intuitive e
-                                    accattivanti.<br>
-                                    Ho recentemente iniziato il mio percorso nel mondo dello sviluppo front end,
-                                    studiando HTML, CSS
-                                    e
-                                    JavaScript per dare vita alle idee e ai progetti digitali.<br>
-                                    Amo imparare nuove tecnologie e migliorare le mie competenze, con l'obiettivo di
-                                    diventare un
-                                    professionista competente e creativo nel campo dello sviluppo web.<br>
-                                    Sono entusiasta di collaborare e di crescere nel settore, portando sempre un tocco
-                                    di
-                                    innovazione e
-                                    passione in ogni progetto!</p>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                <div class="container">
+                    <div class="row align-items-center flex-column flex-md-row">
+
+                        <!-- TESTO + BOTTONE -->
+                        <div class="col-md-8 order-md-first">
+                            <div class="text-start">
+                                <p>
+                                    Ciao! Sono una web developer alle prime armi.
+                                    Ho iniziato il mio percorso nel mondo dello sviluppo
+                                    studiando da autodidatta HTML e CSS, e muovendo i primi passi anche con JavaScript,
+                                    per iniziare a creare siti web dinamici.<br>
+                                    Recentemente mi sto affacciando al mondo backend attraverso un corso intensivo
+                                    FullStack, con l'obiettivo di
+                                    diventare una professionista competente e creativa nel campo dello sviluppo web.<br>
+                                    Sono entusiasta di continuare a imparare nuove tecnologie, approfondire quelle che
+                                    sto studiando e migliorare costantemente le mie competenze.
                                 </p>
+
+                                <!-- BOTTONE OFFCANVAS -->
+                                <button class="btn btn-custom-white mt-3" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                    Info generali
+                                </button>
                             </div>
                         </div>
+
+                        <!-- IMMAGINE -->
+                        <div class="col-md-4 text-center mb-4 mb-md-0 order-md-last">
+                            <img src="img/foto-profilo.jpg" class="img-fluid rounded shadow"
+                                alt="Foto profilo Desara Duka">
+                        </div>
+
                     </div>
                 </div>
 
-                <div>
-                    <p class="mt-3">
-                    </p>
+                <!-- OFFCANVAS -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-scroll="true" data-bs-backdrop="true">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title mx-auto" id="offcanvasWithBothOptionsLabel"><b>Dati personali</b>
+                        </h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-start mt-4">
+                        <p class="mb-3"><i class="bi bi-calendar-event-fill fs-3 me-4"></i> 06/11/1994</p>
+                        <p class="mb-3"><i class="bi bi-flag-fill fs-3 me-3"></i> Italo-albanese</p>
+                        <p class="mb-3"><i class="bi bi-house-door-fill fs-3 me-3"></i> La Spezia, Italia</p>
+                        <p class="mb-3"><i class="bi bi-envelope-at-fill fs-3 me-3"></i> dukadesara@gmail.com</p>
+                        <p class="mb-3"><i class="bi bi-telephone-fill fs-3 me-3"></i> (+39) 345 7690 356</p>
+                    </div>
                 </div>
+
+
+
                 <div class="text-center mt-5">
                     <a href="#contatto" class="btn contatto-link">Contattami!</a>
                 </div>
             </section>
+
+
+            <section id="formazione">
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-book-half me-2 fs-3"></i>
+
+                        <h1 class="mb-1">Formazione</h1>
+                    </div>
+                </div>
+
+                <!-- <div class="container mt-4">
+  <div class="row justify-content-center g-4">
+    
+<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+<div class="card h-100">
+  <img src="img/logo-fire.png" class="card-img-top logo mx-auto" alt="logo F.ire">
+  <div class="card-body text-center">
+    <h5 class="card-name ">Attestato "Tecnico Programmatore"</h5>
+    <p class="card-text">Corso di formazione professionale in <b>Sviluppatore Software .NET, Deploy Cloud e concetti DevOps</b></p>
+  </div>
+  <ul class="list-group list-group-flush text-center">
+    <li class="list-group-item"><b>Presso:</b> F.IRE - Società Benefit</li>
+    <li class="list-group-item"><b>Dove:</b> Genova, Italia</li>
+    <li class="list-group-item"><b>Periodo:</b> 12/05/2025 - in corso</li>
+  </ul>
+  <div class="card-body text-center">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <img src="img/logo-fire.png" class="card-img-top mx-auto d-block" alt="logo F.ire" style="max-width: 80px;">
+        <div class="card-body">
+          <h5 class="card-title">Attestato "Tecnico Programmatore"</h5>
+          <p class="card-text">
+            Corso di formazione professionale in <b>Sviluppatore Software .NET, Deploy Cloud e concetti DevOps</b>
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Presso:</b> F.IRE - Società Benefit</li>
+          <li class="list-group-item"><b>Dove:</b> Genova, Italia</li>
+          <li class="list-group-item"><b>Periodo:</b> 12/05/2025 - in corso</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <img src="img/logo-fire.png" class="card-img-top mx-auto d-block" alt="logo F.ire" style="max-width: 80px;">
+        <div class="card-body">
+          <h5 class="card-title">Attestato "Tecnico Programmatore"</h5>
+          <p class="card-text">
+            Corso di formazione professionale in <b>Sviluppatore Software .NET, Deploy Cloud e concetti DevOps</b>
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Presso:</b> F.IRE - Società Benefit</li>
+          <li class="list-group-item"><b>Dove:</b> Genova, Italia</li>
+          <li class="list-group-item"><b>Periodo:</b> 12/05/2025 - in corso</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+</div> -->
+
+
+                <!-- <div class="row"> -->
+                <!-- <div class="col-4">
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#list-item-1">F.IRE</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-2">freeCodeCamp</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Formimpresa
+                                Liguria</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-4">Università degli studi
+                                di Firenze</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-5">Università degli studi
+                                di Roma "Tor Vergata"</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-6">Istituto Agostino
+                                Fossati - Manfredo Da Passano</a>
+                        </div>
+                    </div> -->
+
+                <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+                    <!-- Colonna centrata -->
+                    <div class="col-12 col-md-8">
+                        <div class="p-4 border rounded text-center">
+
+
+                            <h4 id="list-item-1">
+                                <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliFire"
+                                    role="button" aria-expanded="false" aria-controls="dettagliFire">
+                                    Attestato "Tecnico Programmatore"</a></h4>
+
+                            <div class="collapse" id="dettagliFire">
+                                <p>Corso di formazione professionale in <b>Sviluppatore Software .NET, Deploy Cloud e concetti DevOps</b></p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><b>Presso:</b> F.IRE - Società Benefit</li>
+                                    <li class="list-group-item"><b>Dove:</b> Genova, Italia</li>
+                                    <li class="list-group-item"><b>Periodo:</b> 12/05/2025 - in corso</li>
+                                </ul>
+                            </div>
+
+
+                            <h4 id="list-item-2">
+                                <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliCodeCamp"
+                                    role="button" aria-expanded="false" aria-controls="dettagliCodeCamp">
+                                Certificato <b>"Responsive Web Design"</b></a></h4>
+
+                                <div class="collapse" id="dettagliCodeCamp">
+                            <p>Formazione in autonomia di HTML e CSS</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Presso:</b> la piattaforma freeCodeCamp</li>
+                                <li class="list-group-item"><b>Dove:</b> Online</li>
+                                <li class="list-group-item"><b>Periodo:</b> 27/03/2025</li>
+                            </ul></div>
+
+
+                            <h4 id="list-item-3">
+                                <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliFormImpresa"
+                                    role="button" aria-expanded="false" aria-controls="dettagliFormImpresa">
+                                Attestato di frequenza al corso <b>Digital Marketing</b></a></h4>
+                            <div class="collapse" id="dettagliFormImpresa">
+                            <p>Formazione in autonomia di HTML e CSS</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Presso:</b> la piattaforma freeCodeCamp</li>
+                                <li class="list-group-item"><b>Dove:</b> Online</li>
+                                <li class="list-group-item"><b>Periodo:</b> 27/03/2025</li>
+                            </ul></div>
+
+
+
+                            <h4 id="list-item-4">
+                                <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliFirenze"
+                                    role="button" aria-expanded="false" aria-controls="dettagliFirenze">
+                                Laurea in <b>"Progettazione dei sistemi turistici"</b></a></h4>
+
+                              <div class="collapse" id="dettagliFirenze">  
+                            <p>Laurea magistrale conseguita a Firenze</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Presso:</b>Università degli studi di Firenze</li>
+                                <li class="list-group-item"><b>Dove:</b> Firenze, Italia</li>
+                                <li class="list-group-item"><b>Periodo:</b> 14/09/2017 - 10/02/2020</li>
+                            </ul></div>
+
+
+
+                            <h4 id="list-item-5">
+                                <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliRoma"
+                                    role="button" aria-expanded="false" aria-controls="dettagliRoma">
+                                Laurea in <b>"Scienze del Turismo"</b></a></h4>
+
+                            <div class="collapse" id="dettagliRoma"> 
+                            <p>Laurea triennale conseguita a Roma</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Presso:</b>Università degli studi di Roma "Tor Vergata"
+                                </li>
+                                <li class="list-group-item"><b>Dove:</b> Roma, Italia</li>
+                                <li class="list-group-item"><b>Periodo:</b> 14/09/2014 – 24/10/2017</li>
+                            </ul></div>
+
+
+                            <h4 id="list-item-6">
+                                <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliSpezia"
+                                    role="button" aria-expanded="false" aria-controls="dettagliSpezia">
+                                Diploma in lingue moderne</a></h4>
+
+                               <div class="collapse" id="dettagliSpezia">  
+                            <p>Diploma scuola superiore indirizzo "Linguistico Moderno"</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Presso:</b>Istituto Agostino Fossati - Manfredo Da
+                                    Passano</li>
+                                <li class="list-group-item"><b>Dove:</b> La Spezia, Italia</li>
+                                <li class="list-group-item"><b>Periodo:</b> 09/09/2009 – 09/07/2014</li>
+                            </ul></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+
+
+
+
+
+
+            </section>
+
+
 
 
             <section id="competenze">
@@ -142,133 +371,11 @@
                         <h1 class="mb-1">Le mie competenze</h1>
                     </div>
                 </div>
-                <!-- Le card -->
-                <!-- 
-                <div class="card-group">
-                    <div class="card">
-
-                        <div class="card-body">
-                            <h5 class="card-title">Html, Css & JavaScript</h5>
-                            <p class="card-text">Sono un front end developer con solide competenze in HTML e CSS.<br>
-                                Ho esperienza nella creazione di strutture semantiche e accessibili, garantendo che le
-                                pagine siano facilmente comprensibili sia per gli utenti che per i motori di
-                                ricerca.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">C#</h5>
-                            <p class="card-text"> Conoscenze di base in C#, acquisite attraverso lo studio e
-                                l’esperienza
-                                pratica.<br>
-                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
-                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
-                                C#. </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Networking e Protocolli</h5>
-                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
-                                pratica.<br>
-                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
-                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
-                                C#.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sviluppo Web</h5>
-                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
-                                pratica.<br>
-                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
-                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
-                                C#.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-group">
-                    <div class="card p-1">
-
-                        <div class="card-body">
-                            <h5 class="card-title">Dot Net Web App</h5>
-                            <p class="card-text">Sono un front end developer con solide competenze in HTML e CSS.<br>
-                                Ho esperienza nella creazione di strutture semantiche e accessibili, garantendo che le
-                                pagine siano facilmente comprensibili sia per gli utenti che per i motori di
-                                ricerca.</p>
-                        </div>
-                    </div>
-                    <div class="card p-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestione delle Code nei Microservizi</h5>
-                            <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine web.<br>
-                                Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire eventi e
-                                sviluppare applicazioni web interattive.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card p-1">
-                        <div class="card-body">
-                            <h5 class="card-title">DEPLOY</h5>
-                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
-                                pratica.<br>
-                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
-                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
-                                C#.</p>
-                        </div>
-                    </div>
-                    <div class="card p-1">
-                        <div class="card-body">
-                            <h5 class="card-title"> Containerizzazione e Orchestrazione</h5>
-                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
-                                pratica.<br>
-                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
-                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
-                                C#.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-group">
-                    <div class="card p-1">
-
-                        <div class="card-body">
-                            <h5 class="card-title">Devops</h5>
-                            <p class="card-text">Sono un front end developer con solide competenze in HTML e CSS.<br>
-                                Ho esperienza nella creazione di strutture semantiche e accessibili, garantendo che le
-                                pagine siano facilmente comprensibili sia per gli utenti che per i motori di
-                                ricerca.</p>
-                        </div>
-                    </div>
-                    <div class="card p-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Persistenza Dati</h5>
-                            <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine web.<br>
-                                Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire eventi e
-                                sviluppare applicazioni web interattive.</p>
-                        </div>
-                    </div>
-                    <div class="card p-1">
-                        <div class="card-body">
-                            <h5 class="card-title">WordPress</h5>
-                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo studio e l’esperienza
-                                pratica.<br>
-                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di
-                                controllo e le classi, e sono in grado di comprendere e scrivere codice semplice in
-                                C#.</p>
-                        </div>
-                    </div>
-                </div>    -->
-
-
 
 
                 <div class="container-fluid px-0 mt-4">
                     <div id="carouselExample" class="carousel slide position-relative" data-bs-interval="false">
+
                         <div class="carousel-inner">
                             <div class="carousel-item active">
 
@@ -277,14 +384,21 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <h5 class="card-title">Html & Css</h5>
-                                            <p class="card-text">Sono un front end developer con solide competenze in
-                                                HTML e
-                                                CSS.<br>
-                                                Ho esperienza nella creazione di strutture semantiche e accessibili,
-                                                garantendo che le
-                                                pagine siano facilmente comprensibili sia per gli utenti che per i
-                                                motori di
-                                                ricerca.
+                                            <p class="card-text">Buone competenze nell'utilizzo di <b>HTML</b> e
+                                                <b>CSS</b> utili per offrire un’esperienza utente moderna ed
+                                                efficace.<br>
+                                                Utilizzo <b>Bootstrap</b> per velocizzare lo sviluppo e garantire la
+                                                responsività dei layout su diversi dispositivi.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JavaScript</h5>
+                                            <p class="card-text">Sto studiando <b>JavaScript</b> in autonomia e mi sto
+                                                avvicinando alle sue basi per consolidare le mie competenze di sviluppo
+                                                web.<br>L'obiettivo è di conferire dinamicità e interattività ai siti.
                                             </p>
                                         </div>
                                     </div>
@@ -292,30 +406,12 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <h5 class="card-title">C#</h5>
-                                            <p class="card-text"> Conoscenze di base in C#, acquisite attraverso lo
-                                                studio e
-                                                l’esperienza
-                                                pratica.<br>
+                                            <p class="card-text"> Conoscenze di base in <b>C#</b>, acquisite attraverso
+                                                lo
+                                                studio e l’esperienza pratica.<br>
                                                 Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
-                                                strutture di
-                                                controllo e le classi, e sono in grado di comprendere e scrivere codice
-                                                semplice in
-                                                C#. </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Networking e Protocolli</h5>
-                                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo
-                                                studio e
-                                                l’esperienza
-                                                pratica.<br>
-                                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
-                                                strutture di
-                                                controllo e le classi, e sono in grado di comprendere e scrivere codice
-                                                semplice in
-                                                C#.</p>
+                                                strutture di controllo e le classi, e sono in grado di comprendere e
+                                                scrivere codice semplice in <b>C#</b>.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -328,143 +424,89 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <h5 class="card-title">Sviluppo Web</h5>
-                                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo
-                                                studio e
-                                                l’esperienza
-                                                pratica.<br>
-                                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
-                                                strutture
-                                                di
-                                                controllo e le classi, e sono in grado di comprendere e scrivere codice
-                                                semplice
-                                                in
-                                                C#.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dot Net Web App</h5>
-                                            <p class="card-text">Sono un front end developer con solide competenze in
-                                                HTML e
-                                                CSS.<br>
-                                                Ho esperienza nella creazione di strutture semantiche e accessibili,
-                                                garantendo
-                                                che le
-                                                pagine siano facilmente comprensibili sia per gli utenti che per i
-                                                motori di
-                                                ricerca.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Gestione delle Code nei Microservizi</h5>
-                                            <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine
-                                                web.<br>
-                                                Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire
-                                                eventi
-                                                e
-                                                sviluppare applicazioni web interattive.
+                                            <p class="card-text">Competenze nello sviluppo web back-end con <b>ASP.NET
+                                                    Core
+                                                    MVC</b>, con conoscenza dell’architettura
+                                                <b>Model-View-Controller</b> e creazione
+                                                di controller e viste.<br>Esperienza nell’analisi dei requisiti,
+                                                progettazione tecnica, stesura di documentazione in <b>Markdown</b> e
+                                                utilizzo
+                                                di <b>Git</b> per il versionamento del codice.
                                             </p>
                                         </div>
                                     </div>
 
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-
-                                <div class="d-flex gap-3 justify-content-center">
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">DEPLOY</h5>
-                                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo
-                                                studio e
-                                                l’esperienza
-                                                pratica.<br>
-                                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
-                                                strutture di
-                                                controllo e le classi, e sono in grado di comprendere e scrivere codice
-                                                semplice in
-                                                C#.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title"> Containerizzazione e Orchestrazione</h5>
-                                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo
-                                                studio e
-                                                l’esperienza
-                                                pratica.<br>
-                                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
-                                                strutture di
-                                                controllo e le classi, e sono in grado di comprendere e scrivere codice
-                                                semplice in
-                                                C#.</p>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="card">
-
-                                        <div class="card-body">
-                                            <h5 class="card-title">Devops</h5>
-                                            <p class="card-text">Sono un front end developer con solide competenze in
-                                                HTML e
-                                                CSS.<br>
-                                                Ho esperienza nella creazione di strutture semantiche e accessibili,
-                                                garantendo che le
-                                                pagine siano facilmente comprensibili sia per gli utenti che per i
-                                                motori di
-                                                ricerca.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-
-                                <div class="d-flex gap-3 justify-content-center">
-
                                     <div class="card">
                                         <div class="card-body">
                                             <h5 class="card-title">Persistenza Dati</h5>
-                                            <p class="card-text"> Creare interazioni dinamiche e funzionali sulle pagine
-                                                web.<br>
-                                                Ho esperienza nell’utilizzo di JavaScript per manipolare il DOM, gestire
-                                                eventi e
-                                                sviluppare applicazioni web interattive.</p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">WordPress</h5>
-                                            <p class="card-text">Conoscenze di base in C#, acquisite attraverso lo
-                                                studio e
-                                                l’esperienza
-                                                pratica.<br>
-                                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
-                                                strutture di
-                                                controllo e le classi, e sono in grado di comprendere e scrivere codice
-                                                semplice in
-                                                C#.</p>
+                                            <p class="card-text">Ho acquisito le basi della gestione della persistenza
+                                                dei dati attraverso la lettura e scrittura di file nei formati
+                                                <b>TXT</b> e
+                                                <b>CSV</b>.<br>Ho inoltre lavorato con <b>JSON</b>, comprendendo i
+                                                concetti di
+                                                serializzazione e deserializzazione per lo scambio e la conservazione
+                                                strutturata delle informazioni.
+                                            </p>
                                         </div>
                                     </div>
 
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">JavaScript</h5>
-                                            <p class="card-text">Sono un front end developer con solide competenze in
-                                                HTML e
-                                                CSS.<br>
-                                                Ho esperienza nella creazione di strutture semantiche e accessibili,
-                                                garantendo che le
-                                                pagine siano facilmente comprensibili sia per gli utenti che per i
-                                                motori di
-                                                ricerca.
+                                            <h5 class="card-title">Angular</h5>
+                                            <p class="card-text">Sto iniziando a familiarizzare con <b>Angular</b>,
+                                                framework
+                                                frontend moderno basato su <b>TypeScript</b>.<br>Ho compreso i concetti
+                                                fondamentali come componenti, moduli, data binding e routing, e sto
+                                                approfondendo l’organizzazione di un'applicazione a componenti per lo
+                                                sviluppo di interfacce web dinamiche e scalabili.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+
+                                <div class="d-flex gap-3 justify-content-center">
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Github</h5>
+                                            <p class="card-text">Sono in grado di utilizzare <b>GitHub</b> in modo
+                                                discreto per
+                                                gestire il versionamento del codice, collaborare con altri sviluppatori
+                                                e tenere traccia delle modifiche ai progetti.<br>So creare
+                                                <b>repository</b>,
+                                                effettuare <b>commit</b>, lavorare con <b>branch</b> e risolvere
+                                                conflitti, garantendo
+                                                un flusso di lavoro organizzato e controllato.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Visual Studio Code</h5>
+                                            <p class="card-text">Utilizzo <b>Visual Studio Code</b> come editor
+                                                principale
+                                                per lo sviluppo, apprezzandone l’interfaccia intuitiva e le numerose
+                                                estensioni che facilitano la scrittura e il <b>debug</b> del
+                                                codice.<br>So
+                                                configurarlo per diversi linguaggi e ambienti, migliorando così
+                                                l’efficienza e la produttività durante il lavoro.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">WordPress</h5>
+                                            <p class="card-text">Ho esperienza nell’utilizzo di <b>WordPress</b> come
+                                                <b>CMS</b>
+                                                per la creazione e gestione di siti web, integrando il page builder
+                                                <b>Elementor</b> per realizzare layout personalizzati in modo semplice e
+                                                veloce, senza necessità di programmazione avanzata.<br>Sono in grado di
+                                                costruire pagine responsive e ottimizzate per una buona user experience.
                                             </p>
                                         </div>
                                     </div>
@@ -472,6 +514,7 @@
                                 </div>
                             </div>
                         </div>
+
 
                         <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
                             type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -567,20 +610,22 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                <div class="esperienza fs-4">Esperienza 1</div>
+                                <div class="esperienza">
+                                    <h4>Receptionist</h4> <b>Hotel Ghironi</b> | La Spezia, Italia
+                                </div>
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>Front End Developer presso WebSolutions (2022 - presente).<br>
-                                    Collaborato alla creazione e al miglioramento di interfacce utente per diversi
-                                    clienti, utilizzando HTML, CSS e JavaScript.<br>
-                                    Implementato design responsive per garantire un’ ottima esperienza su dispositivi
-                                    desktop e mobile.<br>
-                                    Ottimizzato le performance delle pagine web, riducendo i tempi di caricamento del
-                                    30%.<br>
-                                    Collaborato con il team di back end per integrare API e funzionalità dinamiche.</p>
+                                <h6 class="mt-3"><span>03/05/2022 – 04/11/2024</span></h6>
+                                <ul class="mt-4">
+                                    <li>Gestione front office (check-in/out, pagamenti, accoglienza ospiti)</li>
+                                    <li>Gestione back office (preparazione preventivi, organizzazione soggiorni di
+                                        gruppo)</li>
+                                    <li>Monitoraggio occupazione/prezzi</li>
+                                    <li>Utilizzo gestionale <b>Nuconga</b> e <b>Suite 5°</b></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -589,21 +634,21 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                                <div class="esperienza fs-4">Esperienza 2</div>
+                                <div class="esperienza">
+                                    <h4>Receptionist e Booking Agent</h4> <b>Hotel Camilla</b> | Firenze, Italia
+                                </div>
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>Stage come Front End Intern presso CreativeWeb (2021 - 2022).<br>
-                                    Supportato il team di sviluppo nella realizzazione di landing page e siti web
-                                    promozionali.<br>
-                                    Imparato a usare framework come React e Vue.js sotto la supervisione dei senior
-                                    developer.<br>
-                                    Partecipato a riunioni di progettazione e brainstorming per migliorare l’usabilità
-                                    dei progetti.<br>
-                                    Gestito piccole attività di testing e debugging per garantire la qualità del
-                                    prodotto finale.</p>
+                                <h6 class="mt-3"><span>17/10/2021 – 30/04/2022</span></h6>
+                                <ul class="mt-4">
+                                    <li>Gestione front desk, prenotazioni, transazioni/fatture</li>
+                                    <li>Monitoraggio occupazione/prezzi</li>
+                                    <li>Utilizzo gestionale <b>5stelle</b></li>
+                                    <li>Assistenza alla clientela</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -613,28 +658,100 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                                <div class="esperienza fs-4">Esperienza 3</div>
+                                <div class="esperienza">
+                                    <h4>Receptionist</h4> <b>CSM Global Security Service (European University
+                                        Institute)</b> | Firenze, Italia
+                                </div>
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>Progetto personale di sviluppo di un portfolio online (2020).<br>
-                                    Creato un sito web personale per mostrare i propri lavori e competenze, utilizzando
-                                    HTML, CSS e JavaScript.<br>
-                                    Implementato funzionalità interattive come gallerie di immagini e moduli di
-                                    contatto.<br>
-                                    Ottimizzato il sito per i motori di ricerca (SEO) e per i dispositivi mobili.</p>
+                                <h6 class="mt-3"><span>05/07/2020 – 14/10/2021</span></h6>
+                                <ul class="mt-4">
+                                    <li>Gestione front desk e sale meeting</li>
+                                    <li>Supervisione sede e risoluzione problematiche</li>
+                                    <li>Gestione shop interno</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                <div class="esperienza">
+                                    <h4>Cameriera di Sala</h4> <b>I'Tuscani</b> | Firenze, Italia
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6 class="mt-3"><span>14/04/2019 – 30/03/2020</span></h6>
+                                <ul class="mt-4">
+                                    <li>Accoglienza e supporto alla clientela</li>
+                                    <li>Preparazione sale e servizio al tavolo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                <div class="esperienza">
+                                    <h4>Receptionist</h4> <b>The Student Hotel Florence (TSH)</b> | Firenze, Italia
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6 class="mt-3"><span>02/10/2018 – 31/03/2019</span></h6>
+                                <ul class="mt-4">
+                                    <li>Accoglienza (check-in/out)</li>
+                                    <li>Utilizzo gestionale <b>Hetras</b> e principali OTA</li>
+                                    <li>Gestione cassa (transazioni on/off line)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                <div class="esperienza">
+                                    <h4>Receptionist</h4> <b>La Notte Blu (B&B)</b> | Firenze, Italia
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6 class="mt-3"><span>09/03/2018 – 30/09/2018</span></h6>
+                                <ul class="mt-4">
+                                    <li>Accoglienza e responsabilità cassa</li>
+                                    <li>Gestione inventario</li>
+                                    <li>Mediatrice tra ospiti e tour operator</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <p class="home-link"><a href="#home">Torna nella home</a></p>
             </section>
 
 
-            <!-- Inserisco la form per essere ricontatti -->
+            <!-- Form per essere ricontatta -->
             <section id="contatti">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="d-flex align-items-center gap-3">
@@ -676,11 +793,15 @@
         <footer>
             <div class="social-icon">
                 <div class="row gap-2">
-                    <div class="col-3" id="icone"><a></a><i class="bi bi-github fs-1"></i></a></div>
+                    <div class="col-3" id="icone"><a href="https://github.com/Des-ara" target="_blank"
+                            class="text-black"><i class="bi bi-github fs-1"></i></a></div>
                     <div class="col-1"></div>
-                    <div class="col-3" id="icone"><a></a><i class="bi bi-linkedin fs-1"></i></a></div>
+                    <div class="col-3" id="icone"><a href="https://www.linkedin.com/in/desara-duka-947898182/"
+                            target="_blank" class="text-black"><i class="bi bi-linkedin fs-1"></i></a></div>
                     <div class="col-1"></div>
-                    <div class="col-3" id="icone"><a></a><i class="bi bi-envelope-at-fill fs-1"></i></a></div>
+                    <div class="col-3" id="icone"><a
+                            href="https://mail.google.com/mail/?view=cm&to=dukadesara@gmail.com" target="_blank"
+                            class="text-black"><i class="bi bi-envelope-at-fill fs-1"></i></a></div>
                 </div>
             </div>
         </footer>

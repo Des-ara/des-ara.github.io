@@ -6,40 +6,27 @@ body {
     padding: 0px;  
 }
 
-div {
+/* div {
     border: 1px black solid;
-}
+}  */
 
 main {
     box-shadow: 5px 20px 25px 20px  #1d7152 !important;
-    padding: 5px 50px 5px 50px !important;    
+    padding: 5px 50px 5px 50px !important;       
 }
 
 /* NAVBAR */
 header {
     position: sticky;
     top: 5px;
-    z-index: 100;
-}
-/*
-.navbar-nav {
-  margin-left: auto;
-  margin-right: auto;
-  gap: 50px;
-}*/
-
-.nav-item {
-    font-size: 20px;
-    font-weight: bold;
+ z-index: 100; 
 }
 
-/*.navbar-brand {
-    text-align: left;
-}*/
 
 a {
     text-decoration: none;
     color: white;
+    transition: all 0.3s ease;
 }
 
 a:hover {
@@ -52,13 +39,50 @@ a:hover {
 }
 
 
+
+.offcanvas.offcanvas-start {
+    width: 290px;
+    background-color: #004a2f; 
+}
+
+.offcanvas-header, .offcanvas-body {
+    background-color: rgb(158, 246, 193);
+    border-radius: 2px;
+}
+
+
+.btn-custom-white {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-white:hover {
+    font-weight: bold;
+    color: black;
+    background-color: #f0f0f0;
+}
+
+/*FORMAZIONE*/
+
+.logo {
+    width: 100px; /* o qualsiasi dimensione */
+    height: auto;  /* mantiene le proporzioni */
+}
+
+h4[id^="list-item-"] {
+  scroll-margin-top: 70px; /* regola questo in base alla tua navbar */
+}
+
+
+
+
 /* SECTIONS */
 section {
     text-align: center;
     padding: 2.5vw;
     border: 1px dotted #e8fd96;
-    margin-top: 20px;
-    margin: 70px;
+    margin: 70px 5vw;
 }
 
 
@@ -161,9 +185,10 @@ section {
 #invio {
     background-color: #e8fd96;
     color: black;
+    transition: all 0.3s ease;
 }
 #invio:hover {
-    font-size: 20px;
+    font-weight: bold;
     background-color: #bccd78 !important;
     color: black !important;
 }
@@ -201,10 +226,20 @@ footer {
 }
 
 
+button.accordion-button:focus-visible,
+button.accordion-button:hover,
+button.accordion-button:focus,
+button.accordion-button:active,
+button.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: rgb(158, 246, 193)  !important;
+    border-color: #e8fd96 !important;
+}
 
-
-
-
+span {
+    background-color: #eaf3c4;
+}
 
 @media (max-width: 1200px) {
     body {
@@ -217,4 +252,31 @@ footer {
     body {
         background-color: #21825c;
     }
+}
+
+
+/* Su schermi piccoli: impila colonna immagine e testo */
+@media (max-width: 767.98px) {
+  #chisono .row {
+    flex-direction: column;
+  }
+  
+  #chisono .col-4,
+  #chisono .col-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  section {
+    margin: 30px 3vw; /* margini più piccoli per schermi piccoli */
+    padding: 4vw;
+  }
+}
+
+/* Su schermi medi e grandi, margini e padding un po' più spaziosi */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  section {
+    margin: 50px 4vw;
+    padding: 3vw;
+  }
 }
