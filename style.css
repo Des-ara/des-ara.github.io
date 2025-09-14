@@ -1,9 +1,9 @@
 body {
     font-family: "DM Sans", sans-serif;
     background-color: #004a2f;
-    color:aliceblue;
+    color: aliceblue;
     margin: 40px;
-    padding: 0px;  
+    padding: 0px;
 }
 
 /* div {
@@ -11,15 +11,16 @@ body {
 }  */
 
 main {
-    box-shadow: 5px 20px 25px 20px  #1d7152 !important;
-    padding: 5px 50px 5px 50px !important;       
+    box-shadow: 5px 20px 25px 20px #1d7152 !important;
+    padding: 5px 50px 5px 50px !important;
 }
+
 
 /* NAVBAR */
 header {
     position: sticky;
     top: 5px;
- z-index: 100; 
+    z-index: 100;
 }
 
 
@@ -35,17 +36,19 @@ a:hover {
 
 
 .bi-flower2 {
-   color: #004a2f;
+    color: #004a2f;
 }
 
 
+/* OFFCANVAS */
 
 .offcanvas.offcanvas-start {
     width: 290px;
-    background-color: #004a2f; 
+    background-color: white;
 }
 
-.offcanvas-header, .offcanvas-body {
+.offcanvas-header,
+.offcanvas-body {
     background-color: rgb(158, 246, 193);
     border-radius: 2px;
 }
@@ -65,15 +68,17 @@ a:hover {
 
 /*FORMAZIONE*/
 
-.logo {
-    width: 100px; /* o qualsiasi dimensione */
-    height: auto;  /* mantiene le proporzioni */
+.sezione {
+    background-color: rgb(158, 246, 193);
+
+    border-radius: 10px;
+
+    color: black !important;
 }
 
-h4[id^="list-item-"] {
-  scroll-margin-top: 70px; /* regola questo in base alla tua navbar */
+.sezione a {
+    color: black !important;
 }
-
 
 
 
@@ -85,19 +90,18 @@ section {
     margin: 70px 5vw;
 }
 
-
 #contatti {
     padding: 10px;
 }
 
 .contatto-link {
-  font-size: 20px;
-  padding: 20px;
-  background-color: #27b581 !important;
-  color: black !important;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: width 5s, height 5s, transform 0.5s;  
+    font-size: 20px;
+    padding: 20px;
+    background-color: #27b581 !important;
+    color: black !important;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: width 5s, height 5s, transform 0.5s;
 }
 
 .contatto-link:hover {
@@ -106,18 +110,18 @@ section {
 
 
 .card-title {
-  padding: 10px;
-  background-color: #096c47;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
+    padding: 10px;
+    background-color: #096c47;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 
- #carouselExample {
-      padding-left: 0;
-      padding-right: 0;
-    }
+#carouselExample {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .carousel-control-prev {
     left: 0;
@@ -130,6 +134,7 @@ section {
 .card div {
     width: 18rem;
 }
+
 .carousel-control-prev-icon {
     background-color: #4ca987;
 }
@@ -141,9 +146,9 @@ section {
 
 /*Competenze bars*/
 
-#contorno {
-  border: 1px solid #e8fd96;
-  box-shadow: 5px 10px  #e8fd96 !important;
+.contorno {
+    border: 1px solid #e8fd96;
+    box-shadow: 5px 10px #e8fd96 !important;
 }
 
 .skill-container {
@@ -157,6 +162,7 @@ section {
 .home-link {
     margin-top: 40px;
 }
+
 .home-link a {
     background-color: white;
     color: black;
@@ -167,7 +173,7 @@ section {
 .progress-bar {
     background-color: #27b581;
     font-size: 16px;
-    color: black;    
+    color: black;
 }
 
 
@@ -187,6 +193,7 @@ section {
     color: black;
     transition: all 0.3s ease;
 }
+
 #invio:hover {
     font-weight: bold;
     background-color: #bccd78 !important;
@@ -195,7 +202,7 @@ section {
 
 
 footer {
-    
+
     color: black !important;
     font-size: 1em;
     text-align: center;
@@ -206,12 +213,12 @@ footer {
 
 
 #icone {
-  transition: width 2s, height 2s, transform 2s; 
+    transition: width 2s, height 2s, transform 2s;
 }
 
 
 #icone:hover {
-   transform: scale(2);
+    transform: scale(2);
 }
 
 
@@ -233,13 +240,18 @@ button.accordion-button:active,
 button.accordion-button:not(.collapsed) {
     box-shadow: none !important;
     outline: none !important;
-    background-color: rgb(158, 246, 193)  !important;
+    background-color: rgb(158, 246, 193) !important;
     border-color: #e8fd96 !important;
 }
 
 span {
     background-color: #eaf3c4;
 }
+
+
+
+
+/* MEDIA */
 
 @media (max-width: 1200px) {
     body {
@@ -255,28 +267,41 @@ span {
 }
 
 
-/* Su schermi piccoli: impila colonna immagine e testo */
 @media (max-width: 767.98px) {
-  #chisono .row {
-    flex-direction: column;
-  }
-  
-  #chisono .col-4,
-  #chisono .col-8 {
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
+    #chisono .row {
+        flex-direction: column;
+    }
 
-  section {
-    margin: 30px 3vw; /* margini più piccoli per schermi piccoli */
-    padding: 4vw;
-  }
+    #chisono .col-4,
+    #chisono .col-8 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    section {
+        margin: 30px 3vw;
+        padding: 4vw;
+    }
 }
 
-/* Su schermi medi e grandi, margini e padding un po' più spaziosi */
+
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  section {
-    margin: 50px 4vw;
-    padding: 3vw;
+    section {
+        margin: 50px 4vw;
+        padding: 3vw;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+  .carousel-item .card:nth-child(2),
+  .carousel-item .card:nth-child(3) {
+    display: none;
+  }
+
+  .carousel-item .card {
+    flex: 1 1 100%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
