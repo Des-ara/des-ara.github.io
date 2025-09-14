@@ -135,6 +135,10 @@ section {
     width: 18rem;
 }
 
+.carousel-item .card {
+  box-sizing: border-box;
+}
+
 .carousel-control-prev-icon {
     background-color: #4ca987;
 }
@@ -285,23 +289,36 @@ span {
 }
 
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
-    section {
-        margin: 50px 4vw;
-        padding: 3vw;
-    }
-}
-
-
 @media (max-width: 767.98px) {
   .carousel-item .card:nth-child(2),
   .carousel-item .card:nth-child(3) {
-    display: none;
+    display: none !important;
   }
 
   .carousel-item .card {
     flex: 1 1 100%;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .carousel-item .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-item .card {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    max-width: 92%;
+  }
+
+  .carousel-item .card-title {
+    font-size: 1rem;
   }
 }
