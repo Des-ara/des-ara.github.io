@@ -39,6 +39,9 @@ a:hover {
     color: #004a2f;
 }
 
+.riquadro {
+    border: 1px dotted #e8fd96;
+}
 
 /* OFFCANVAS */
 
