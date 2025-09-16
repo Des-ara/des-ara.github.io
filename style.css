@@ -219,25 +219,17 @@ footer {
 }
 
 
-#icone {
+.icone {
     transition: width 2s, height 2s, transform 2s;
 }
 
 
-#icone:hover {
+.icone:hover {
     transform: scale(2);
 }
 
 
-.accordion-button {
-    margin: -5px;
-    border: 1px solid black;
-}
 
-
-.accordion-body {
-    text-align: left;
-}
 
 
 button.accordion-button:focus-visible,
@@ -259,7 +251,7 @@ span {
 
 
 /* MEDIA */
-
+/* 
 @media (max-width: 1200px) {
     body {
         background-color: #096c47;
@@ -267,6 +259,7 @@ span {
 }
 
 /* Tablet piccolo (max-width: 992px) */
+/*
 @media (max-width: 992px) {
     body {
         background-color: #21825c;
@@ -324,4 +317,4 @@ span {
   .carousel-item .card-title {
     font-size: 1rem;
   }
-}
+} */
