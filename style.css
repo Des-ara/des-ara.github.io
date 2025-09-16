@@ -6,15 +6,17 @@ body {
     padding: 0px;
 }
 
-/* div {
+ div {
     border: 1px black solid;
-}  */
+}  
 
 main {
     box-shadow: 5px 20px 25px 20px #1d7152 !important;
-    padding: 5px 50px 5px 50px !important;
 }
 
+p {
+    font-size: 20px;
+}
 
 /* NAVBAR */
 header {
@@ -73,9 +75,7 @@ a:hover {
 
 .sezione {
     background-color: rgb(158, 246, 193);
-
     border-radius: 10px;
-
     color: black !important;
 }
 

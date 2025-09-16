@@ -1,0 +1,150 @@
+:root{
+  --bg:#004a2f;
+  --brand:#27b581;
+  --accent:#e8fd96;
+  --box:#9ef6c1;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+
+body{
+  font-family:"DM Sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif;
+  background-color:var(--bg);
+  color:aliceblue;
+  margin:0; /* niente margine fisso */
+}
+
+/* offset per navbar fixed/sticky */
+main{ padding-block: clamp(12px, 2vw, 24px); }
+header + *,
+main{ scroll-margin-top: 90px; }
+
+/* contenitore principale con ombra e padding responsive */
+main.container{
+  background: transparent;
+}
+.section-box{
+  background: transparent;
+  box-shadow: 0 18px 40px rgba(39,181,129,.35);
+  border: 1px dotted var(--accent);
+  border-radius: 10px;
+  margin: clamp(16px, 4vw, 48px) auto;
+  padding: clamp(12px, 3vw, 30px);
+}
+.section-title{
+  display:flex; align-items:center; justify-content:center; gap:.5rem;
+}
+
+/* link generali */
+a{ text-decoration:none; color:white; transition: transform .2s ease; }
+a:hover{ font-weight:600; }
+
+/* brand icon color */
+.bi-flower2{ color:#004a2f; }
+
+/* riquadro testo chi-sono */
+.riquadro{ border:1px dotted var(--accent); border-radius:10px; background:rgba(255,255,255,.03); }
+
+/* foto iniziale: limita larghezza su mobile */
+.max-w-280{ max-width: 280px; margin-inline:auto; }
+
+/* offcanvas */
+.offcanvas.offcanvas-start{
+  width: min(92vw, 320px);
+  background: white;
+}
+.offcanvas-header,.offcanvas-body{
+  background-color: var(--box);
+  border-radius: 2px;
+  color:#0b2e1f;
+}
+
+/* bottoni */
+.btn-custom-white{
+  background:#fff; color:#000; transition: transform .15s ease, background-color .2s ease;
+}
+.btn-custom-white:hover{ transform: translateY(-1px); background:#f0f0f0; }
+
+/* sezione formazione card */
+.sezione{ background:var(--box); border-radius:10px; color:#000; }
+.sezione a{ color:#000; }
+
+/* titolo nelle card */
+.card-title{
+  padding:.5rem .75rem;
+  background:#096c47;
+  color:#fff; font-weight:700; border-radius:6px;
+}
+
+/* carousel: riga di card responsiva */
+.cards-row{
+  display:flex; flex-wrap:wrap; gap:clamp(12px,2.5vw,18px);
+  justify-content:center;
+  padding: .5rem;
+}
+.cards-row .card{
+  flex: 1 1 calc(100% - 24px);       /* 1 per riga su mobile */
+  max-width: 680px;
+  border-radius:12px;
+}
+@media (min-width: 576px){
+  .cards-row .card{ flex-basis: calc(50% - 18px); } /* 2 per riga */
+}
+@media (min-width: 992px){
+  .cards-row .card{ flex-basis: calc(33.333% - 16px); } /* 3 per riga */
+}
+/* controlli carousel visibili su sfondo scuro */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{ background-color:#4ca987; border-radius:50%; }
+
+/* progress area */
+.contorno{ border:1px solid var(--accent); box-shadow: 4px 8px var(--accent); }
+.progress{ height:10px; background:rgba(255,255,255,.2); }
+.progress-bar{ background:var(--brand); color:#000; }
+
+/* link torna alla home */
+.home-link{ margin-top: 20px; text-align:center; }
+.home-link a{ background:#fff; color:#000; border-radius:6px; padding:6px 10px; display:inline-block; }
+
+/* contatti */
+#form{ gap: 10px; max-width: 900px; margin-inline:auto; }
+#invio{
+  background-color:var(--accent); color:#000;
+}
+#invio:hover{ background-color:#bccd78; color:#000; }
+
+/* footer */
+footer{ background:aliceblue !important; color:#000; text-align:center; }
+.icone{ transition: transform .2s ease; }
+.icone:hover{ transform: scale(1.2); }
+@media (prefers-reduced-motion: reduce){
+  .icone, a, .btn, .contatto-link{ transition:none !important; }
+}
+
+/* pulsante contatto */
+.contatto-link{
+  font-size: clamp(16px, 2.2vw, 20px);
+  padding: .9rem 1.2rem;
+  background-color: var(--brand) !important;
+  color: #000 !important;
+  font-weight: 700; border-radius: 8px;
+  transition: transform .25s ease;
+}
+.contatto-link:hover{ transform: scale(1.06); }
+
+/* miglioramenti accordion focus */
+button.accordion-button:focus-visible,
+button.accordion-button:hover,
+button.accordion-button:focus,
+button.accordion-button:active,
+button.accordion-button:not(.collapsed){
+  box-shadow:none !important; outline:none !important;
+  background-color: var(--box) !important; border-color: var(--accent) !important;
+}
+
+/* evidenziazione span generica */
+span{ background-color:#eaf3c4; color:#000; }
+
+/* helper per immagini dentro card eventualmente lunghe */
+.card img{ max-width:100%; height:auto; }
