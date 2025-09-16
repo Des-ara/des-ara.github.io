@@ -1,550 +1,504 @@
-<!Doctype html>
-<html>
+<!doctype html>
+<html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="Portfolio CV online di Desara Duka">
-    <meta name="keywords" content="html, landing page, esempio">
-    <meta name="author" content="Il tuo nome">
+  <meta name="description" content="Portfolio CV online di Desara Duka">
+  <meta name="keywords" content="html, landing page, esempio">
+  <meta name="author" content="Desara Duka">
 
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
-
-    <title>Desara Duka - Web Developer Junior, CV Online</title>
-
+  <title>Desara Duka - Web Developer Junior, CV Online</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
-    <div id="home"></div>
-    <div class="container-body">
+  <div id="home"></div>
+  <div class="container-body">
 
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="first-nav">
-                <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="first-nav">
+        <div class="container-fluid">
 
-                    <a class="navbar-brand d-flex align-items-center gap-3" href="#ilmiocv"><i
-                            class="bi bi-flower2 fs-1 me-2 "></i>
-                        <h3>Desara Duka</h3>
+          <a class="navbar-brand d-flex align-items-center gap-3" href="#ilmiocv"><i
+              class="bi bi-flower2 fs-1 me-2 "></i>
+            <h3>Desara Duka</h3>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#chisono">
+                  <h5>Chi sono</h5>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#formazione">
+                  <h5>Formazione</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#competenze">
+                  <h5>Competenze</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#esperienze">
+                  <h5>Esperienze</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contatti">
+                  <h5>Contatti</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenuto -->
+    <main class="container px-3 px-sm-4">
+
+      <section id="chisono" class="section-box">
+        <div class="section-title">
+          <i class="bi bi-person-square me-2 fs-4"></i>
+          <h1 class="h2 mb-0">Chi sono</h1>
+        </div>
+
+        <div class="row align-items-center g-4 mt-2">
+          <!-- IMAGE FIRST ON MOBILE -->
+          <div class="col-12 col-md-4 order-1 order-md-2 text-center">
+            <img src="img/foto-profilo.jpg" class="img-fluid rounded shadow w-100 max-w-280"
+              alt="Foto profilo di Desara Duka" loading="lazy">
+          </div>
+
+          <!-- TEXT -->
+          <div class="col-12 col-md-8 order-2 order-md-1">
+            <div class="p-3 p-sm-4 riquadro">
+              <p class="mb-3">
+                Ciao! Sono una web developer alle prime armi. Ho iniziato il mio percorso studiando da autodidatta
+                <b>HTML</b> e <b>CSS</b>, muovendo i primi passi anche con <b>JavaScript</b> per creare siti dinamici.
+                Recentemente mi sto affacciando al backend con un corso <b>FullStack</b>, con l'obiettivo di diventare
+                una professionista competente e creativa. Sono entusiasta di imparare nuove tecnologie e migliorare
+                costantemente.
+              </p>
+              <button class="btn btn-custom-white mt-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                Info generali
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- OFFCANVAS -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-scroll="true" data-bs-backdrop="true">
+          <div class="offcanvas-header">
+            <h4 class="offcanvas-title mx-auto" id="offcanvasWithBothOptionsLabel"><b>Dati personali</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi"></button>
+          </div>
+          <div class="offcanvas-body text-start mt-2">
+            <p class="mb-3"><i class="bi bi-calendar-event-fill fs-5 me-3"></i> 06/11/1994</p>
+            <p class="mb-3"><i class="bi bi-flag-fill fs-5 me-3"></i> Italo-albanese</p>
+            <p class="mb-3"><i class="bi bi-house-door-fill fs-5 me-3"></i> La Spezia, Italia</p>
+            <p class="mb-3"><i class="bi bi-envelope-at-fill fs-5 me-3"></i> dukadesara@gmail.com</p>
+            <p class="mb-3"><i class="bi bi-telephone-fill fs-5 me-3"></i> (+39) 345 7690 356</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="#contatto" class="btn contatto-link">Contattami!</a>
+        </div>
+      </section>
+
+      <!-- FORMAZIONE -->
+      <section id="formazione" class="section-box">
+        <div class="section-title">
+          <i class="bi bi-book-half me-2 mb-3 fs-3"></i>
+          <h1 class="h2 mb-4">Formazione</h1>
+        </div>
+
+        
+
+        <div class="container-fluid px-0">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+              <div class="p-3 p-sm-4 border rounded text-center bg-light text-dark">
+                <!-- item -->
+                <div class="sezione mb-3 p-3">
+                  <h4 class="h5 mb-0">
+                    <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliFire" role="button"
+                      aria-expanded="false" aria-controls="dettagliFire">
+                      Attestato "Tecnico Programmatore"
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav gap-3">
-                            <li class="nav-item ">
-                                <a class="nav-link" aria-current="page" href="#chisono">
-                                    <h5>Chi sono</h5>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" aria-current="page" href="#formazione">
-                                    <h5>Formazione</h5>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#competenze">
-                                    <h5>Competenze</h5>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#esperienze">
-                                    <h5>Esperienze</h5>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contatti">
-                                    <h5>Contatti</h5>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <section id="chisono" class="py-5">
-
-
-                <div class="d-flex justify-content-center align-items-center mb-4">
-                    <div class="d-flex align-items-center gap-3">
-                        <i class="bi bi-person-square me-2 fs-3"></i>
-                        <h1 class="mb-1">Chi sono</h1>
-                    </div>
+                  </h4>
+                  <div class="collapse text-start mt-2" id="dettagliFire">
+                    <p class="mb-2">Corso di formazione professionale in <br><b>Sviluppatore Software .NET, Deploy Cloud
+                        e concetti DevOps</b></p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"> <b>Presso:</b> F.IRE - Società Benefit</li>
+                      <li class="list-group-item"> <b>Dove:</b> Genova, Italia</li>
+                      <li class="list-group-item"> <b>Periodo:</b> 12/05/2025 - in corso</li>
+                    </ul>
+                  </div>
                 </div>
 
+                <div class="sezione mb-3 p-3">
+                  <h4 class="h5 mb-0">
+                    <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliCodeCamp" role="button"
+                      aria-expanded="false" aria-controls="dettagliCodeCamp">
+                      Certificato <b>"Responsive Web Design"</b></a>
+                  </h4>
 
-                <div class="container">
-                    <!-- <div class="row align-items-center flex-column flex-row"> -->
-
-                    <!-- TESTO + BOTTONE -->
-                    <div class="order-md-first riquadro">
-                        <div class="text-start">
-                            <p>
-                                Ciao! Sono una web developer alle prime armi.<br><br>
-                                Ho iniziato il mio percorso nel mondo dello sviluppo
-                                studiando da autodidatta <b>HTML</b> e <b>CSS</b>, e muovendo i primi passi anche
-                                con <b>JavaScript</b>,
-                                per iniziare a creare siti web dinamici.<br><br>
-                                Recentemente mi sto affacciando al mondo backend attraverso un corso intensivo
-                                <b>FullStack</b>, con l'obiettivo di
-                                diventare una professionista competente e creativa nel campo dello sviluppo web.<br><br>
-                                Sono entusiasta di continuare a imparare nuove tecnologie, approfondire quelle che
-                                sto studiando e migliorare costantemente le mie competenze.
-                            </p>
-
-
-                            <!-- IMMAGINE -->
-                            <div class="text-center mb-4 order-md-last ms-5">
-                                <img src="img/foto.profilo.jpg" class="img-fluid rounded shadow"
-                                    alt="Foto profilo Desara Duka">
-                            </div>
-
-                            <!-- BOTTONE OFFCANVAS -->
-                            <button class="btn btn-custom-white mt-3" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                                Info generali
-                            </button>
-                        </div>
-                    </div>
-
-
-
-                    <!-- </div> -->
+                  <div class="collapse text-start mt-2" id="dettagliCodeCamp">
+                    <p>Formazione in autonomia di HTML e CSS</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Presso:</b> piattaforma freeCodeCamp</li>
+                      <li class="list-group-item"><b>Dove:</b> Online</li>
+                      <li class="list-group-item"><b>Periodo:</b> 27/03/2025</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <!-- OFFCANVAS -->
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBothOptions"
-                    aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-scroll="true" data-bs-backdrop="true">
-                    <div class="offcanvas-header">
-                        <h4 class="offcanvas-title mx-auto" id="offcanvasWithBothOptionsLabel"><b>Dati personali</b>
-                        </h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body text-start mt-4">
-                        <p class="mb-3"><i class="bi bi-calendar-event-fill fs-3 me-4"></i> 06/11/1994</p>
-                        <p class="mb-3"><i class="bi bi-flag-fill fs-3 me-3"></i> Italo-albanese</p>
-                        <p class="mb-3"><i class="bi bi-house-door-fill fs-3 me-3"></i> La Spezia, Italia</p>
-                        <p class="mb-3"><i class="bi bi-envelope-at-fill fs-3 me-3"></i> dukadesara@gmail.com</p>
-                        <p class="mb-3"><i class="bi bi-telephone-fill fs-3 me-3"></i> (+39) 345 7690 356</p>
-                    </div>
+                <div class="sezione mb-3 p-3">
+                  <h4 class="h5 mb-0">
+                    <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliFormImpresa" role="button"
+                      aria-expanded="false" aria-controls="dettagliFormImpresa">
+                      Corso <b>Digital Marketing</b></a>
+                  </h4>
+                  <div class="collapse text-start mt-2" id="dettagliFormImpresa">
+                    <p>Attestato di frequenza progetto <br>"Nice Welcome"- Corso: Digital
+                      Marketing</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Presso:</b> Formimpresa Liguria</li>
+                      <li class="list-group-item"><b>Dove:</b> La Spezia, Italia</li>
+                      <li class="list-group-item"><b>Periodo:</b> 18/01/2024 - 15/03/2024</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="sezione mb-3 p-3">
+                  <h4 class="h5 mb-0">
+                    <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliFirenze" role="button"
+                      aria-expanded="false" aria-controls="dettagliFirenze">
+                      Laurea in <b>"Progettazione dei sistemi turistici"</b></a>
+                  </h4>
+
+                  <div class="collapse text-start mt-2" id="dettagliFirenze">
+                    <p>Laurea magistrale conseguita a Firenze</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Presso:</b> Università degli studi di
+                        Firenze
+                      </li>
+                      <li class="list-group-item"><b>Dove:</b> Firenze, Italia</li>
+                      <li class="list-group-item"><b>Periodo:</b> 14/09/2017 - 10/02/2020</li>
+                    </ul>
+                  </div>
+
                 </div>
 
 
+                <div class="sezione mb-3 p-3">
+                  <h4 class="h5 mb-0">
+                    <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliRoma" role="button"
+                      aria-expanded="false" aria-controls="dettagliRoma">
+                      Laurea in <b>"Scienze del Turismo"</b></a>
+                  </h4>
 
-                <div class="text-center mt-5">
-                    <a href="#contatto" class="btn contatto-link">Contattami!</a>
+                  <div class="collapse text-start mt-2" id="dettagliRoma">
+                    <p>Laurea triennale conseguita a Roma</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Presso:</b> Università degli studi di
+                        Roma "Tor
+                        Vergata"
+                      </li>
+                      <li class="list-group-item"><b>Dove:</b> Roma, Italia</li>
+                      <li class="list-group-item"><b>Periodo:</b> 14/09/2014 – 24/10/2017</li>
+                    </ul>
+                  </div>
                 </div>
-            </section>
 
 
-            <section id="formazione">
+                <div class="sezione mb-3 p-3">
+                  <h4 class="h5 mb-0">
+                    <a class="text-decoration-none" data-bs-toggle="collapse" href="#dettagliSpezia" role="button"
+                      aria-expanded="false" aria-controls="dettagliSpezia">
+                      Diploma in lingue moderne</a>
+                  </h4>
 
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="d-flex align-items-center gap-3">
-                        <i class="bi bi-book-half me-2 fs-3"></i>
+                  <div class="collapse text-start mt-2" id="dettagliSpezia">
+                    <p>Diploma scuola superiore indirizzo "Linguistico Moderno"</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Presso:</b> Istituto Agostino Fossati -
+                        Manfredo
+                        Da
+                        Passano</li>
+                      <li class="list-group-item"><b>Dove:</b> La Spezia, Italia</li>
+                      <li class="list-group-item"><b>Periodo:</b> 09/09/2009 – 09/07/2014</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                        <h1 class="mb-1">Formazione</h1>
+        <p class="home-link mt-4"><a href="#home">Torna nella home</a></p>
+      </section>
+
+
+      <!-- COMPETENZE -->
+      <section id="competenze" class="section-box">
+
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <div class="d-flex align-items-center gap-2 section-title">
+            <i class="bi bi-graph-up-arrow me-3 fs-3"></i>
+            <h1 class="mb-0 h2">Le mie competenze</h1>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="container">
+          <div id="carouselExample" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner carousel-cards-wrapper">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Card 1 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">Html & Css</h5>
+                        <p class="card-text">
+                          Buone competenze nell'utilizzo di <b>HTML</b> e <b>CSS</b> utili per offrire un’esperienza
+                          utente moderna ed efficace.<br>
+                          Utilizzo <b>Bootstrap</b> per velocizzare lo sviluppo e garantire la responsività dei layout
+                          su diversi dispositivi.
+                        </p>
+                      </div>
                     </div>
-                </div>
-
-
-
-                <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-
-                    <div class="container py-5">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <div class="p-4 border rounded text-center bg-light">
-
-
-
-                                    <div class="sezione mb-4 py-3">
-                                        <h4>
-                                            <a class="text-decoration-none" data-bs-toggle="collapse"
-                                                href="#dettagliFire" role="button" aria-expanded="false"
-                                                aria-controls="dettagliFire">
-                                                Attestato "Tecnico Programmatore"
-                                            </a>
-                                        </h4>
-                                        <div class="collapse" id="dettagliFire">
-                                            <p>Corso di formazione professionale in <br><b>Sviluppatore Software .NET,
-                                                    Deploy Cloud e concetti DevOps</b></p>
-                                            <ul class="list-group list-group-flush text-start">
-                                                <li class="list-group-item"><b>Presso:</b> F.IRE - Società Benefit</li>
-                                                <li class="list-group-item"><b>Dove:</b> Genova, Italia</li>
-                                                <li class="list-group-item"><b>Periodo:</b> 12/05/2025 - in corso</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="sezione mb-4 py-3">
-                                        <h4 id="list-item-2">
-                                            <a class="text-decoration-none" data-bs-toggle="collapse"
-                                                href="#dettagliCodeCamp" role="button" aria-expanded="false"
-                                                aria-controls="dettagliCodeCamp">
-                                                Certificato <b>"Responsive Web Design"</b></a>
-                                        </h4>
-
-                                        <div class="collapse" id="dettagliCodeCamp">
-                                            <p>Formazione in autonomia di HTML e CSS</p>
-                                            <ul class="list-group list-group-flush text-start">
-                                                <li class="list-group-item"><b>Presso:</b> piattaforma freeCodeCamp</li>
-                                                <li class="list-group-item"><b>Dove:</b> Online</li>
-                                                <li class="list-group-item"><b>Periodo:</b> 27/03/2025</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="sezione mb-4 py-3">
-                                        <h4 id="list-item-3">
-                                            <a class="text-decoration-none" data-bs-toggle="collapse"
-                                                href="#dettagliFormImpresa" role="button" aria-expanded="false"
-                                                aria-controls="dettagliFormImpresa">
-                                                Corso <b>Digital Marketing</b></a>
-                                        </h4>
-                                        <div class="collapse" id="dettagliFormImpresa">
-                                            <p>Attestato di frequenza progetto <br>"Nice Welcome"- Corso: Digital
-                                                Marketing</p>
-                                            <ul class="list-group list-group-flush text-start">
-                                                <li class="list-group-item"><b>Presso:</b> Formimpresa Liguria</li>
-                                                <li class="list-group-item"><b>Dove:</b> La Spezia, Italia</li>
-                                                <li class="list-group-item"><b>Periodo:</b> 18/01/2024 - 15/03/2024</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="sezione mb-4 py-3">
-                                        <h4 id="list-item-4">
-                                            <a class="text-decoration-none" data-bs-toggle="collapse"
-                                                href="#dettagliFirenze" role="button" aria-expanded="false"
-                                                aria-controls="dettagliFirenze">
-                                                Laurea in <b>"Progettazione dei sistemi turistici"</b></a>
-                                        </h4>
-
-
-                                        <div class="collapse" id="dettagliFirenze">
-                                            <p>Laurea magistrale conseguita a Firenze</p>
-                                            <ul class="list-group list-group-flush text-start">
-                                                <li class="list-group-item"><b>Presso:</b> Università degli studi di
-                                                    Firenze
-                                                </li>
-                                                <li class="list-group-item"><b>Dove:</b> Firenze, Italia</li>
-                                                <li class="list-group-item"><b>Periodo:</b> 14/09/2017 - 10/02/2020</li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="sezione mb-4 py-3">
-                                        <h4 id="list-item-5">
-                                            <a class="text-decoration-none" data-bs-toggle="collapse"
-                                                href="#dettagliRoma" role="button" aria-expanded="false"
-                                                aria-controls="dettagliRoma">
-                                                Laurea in <b>"Scienze del Turismo"</b></a>
-                                        </h4>
-
-                                        <div class="collapse" id="dettagliRoma">
-                                            <p>Laurea triennale conseguita a Roma</p>
-                                            <ul class="list-group list-group-flush text-start">
-                                                <li class="list-group-item"><b>Presso:</b> Università degli studi di
-                                                    Roma "Tor
-                                                    Vergata"
-                                                </li>
-                                                <li class="list-group-item"><b>Dove:</b> Roma, Italia</li>
-                                                <li class="list-group-item"><b>Periodo:</b> 14/09/2014 – 24/10/2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="sezione mb-4 py-3">
-                                        <h4 id="list-item-6">
-                                            <a class="text-decoration-none" data-bs-toggle="collapse"
-                                                href="#dettagliSpezia" role="button" aria-expanded="false"
-                                                aria-controls="dettagliSpezia">
-                                                Diploma in lingue moderne</a>
-                                        </h4>
-
-                                        <div class="collapse" id="dettagliSpezia">
-                                            <p>Diploma scuola superiore indirizzo "Linguistico Moderno"</p>
-                                            <ul class="list-group list-group-flush text-start">
-                                                <li class="list-group-item"><b>Presso:</b>Istituto Agostino Fossati -
-                                                    Manfredo
-                                                    Da
-                                                    Passano</li>
-                                                <li class="list-group-item"><b>Dove:</b> La Spezia, Italia</li>
-                                                <li class="list-group-item"><b>Periodo:</b> 09/09/2009 – 09/07/2014</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            </section>
-
-
-
-
-            <section id="competenze">
-
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="d-flex align-items-center gap-3">
-                        <i class="bi bi-graph-up-arrow me-2 fs-3"></i>
-
-                        <h1 class="mb-1">Le mie competenze</h1>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">
+                          Sto studiando <b>JavaScript</b> in autonomia e mi sto avvicinando alle sue basi per
+                          consolidare le mie competenze di sviluppo web.<br>
+                          L'obiettivo è di conferire dinamicità e interattività ai siti.
+                        </p>
+                      </div>
                     </div>
-                </div>
-
-
-                <div class="container-fluid px-0 mt-4">
-                    <div id="carouselExample" class="carousel slide position-relative" data-bs-interval="false">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-
-                                <div class="d-flex gap-3 justify-content-center">
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Html & Css</h5>
-                                            <p class="card-text">Buone competenze nell'utilizzo di <b>HTML</b> e
-                                                <b>CSS</b> utili per offrire un’esperienza utente moderna ed
-                                                efficace.<br>
-                                                Utilizzo <b>Bootstrap</b> per velocizzare lo sviluppo e garantire la
-                                                responsività dei layout su diversi dispositivi.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">JavaScript</h5>
-                                            <p class="card-text">Sto studiando <b>JavaScript</b> in autonomia e mi sto
-                                                avvicinando alle sue basi per consolidare le mie competenze di sviluppo
-                                                web.<br>L'obiettivo è di conferire dinamicità e interattività ai siti.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">C#</h5>
-                                            <p class="card-text"> Conoscenze di base in <b>C#</b>, acquisite attraverso
-                                                lo
-                                                studio e l’esperienza pratica.<br>
-                                                Ho familiarità con le fondamenta del linguaggio, come la sintassi, le
-                                                strutture di controllo e le classi, e sono in grado di comprendere e
-                                                scrivere codice semplice in <b>C#</b>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-
-                                <div class="d-flex gap-3 justify-content-center">
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Sviluppo Web</h5>
-                                            <p class="card-text">Competenze nello sviluppo web back-end con <b>ASP.NET
-                                                    Core
-                                                    MVC</b>, con conoscenza dell’architettura
-                                                <b>Model-View-Controller</b> e creazione
-                                                di controller e viste.<br>Esperienza nell’analisi dei requisiti,
-                                                progettazione tecnica, stesura di documentazione in <b>Markdown</b> e
-                                                utilizzo
-                                                di <b>Git</b> per il versionamento del codice.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Persistenza Dati</h5>
-                                            <p class="card-text">Ho acquisito le basi della gestione della persistenza
-                                                dei dati attraverso la lettura e scrittura di file nei formati
-                                                <b>TXT</b> e
-                                                <b>CSV</b>.<br>Ho inoltre lavorato con <b>JSON</b>, comprendendo i
-                                                concetti di
-                                                serializzazione e deserializzazione per lo scambio e la conservazione
-                                                strutturata delle informazioni.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Angular</h5>
-                                            <p class="card-text">Sto iniziando a familiarizzare con <b>Angular</b>,
-                                                framework
-                                                frontend moderno basato su <b>TypeScript</b>.<br>Ho compreso i concetti
-                                                fondamentali come componenti, moduli, data binding e routing, e sto
-                                                approfondendo l’organizzazione di un'applicazione a componenti per lo
-                                                sviluppo di interfacce web dinamiche e scalabili.</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                            <div class="carousel-item">
-
-                                <div class="d-flex gap-3 justify-content-center">
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Github</h5>
-                                            <p class="card-text">Sono in grado di utilizzare <b>GitHub</b> in modo
-                                                discreto per
-                                                gestire il versionamento del codice, collaborare con altri sviluppatori
-                                                e tenere traccia delle modifiche ai progetti.<br>So creare
-                                                <b>repository</b>,
-                                                effettuare <b>commit</b>, lavorare con <b>branch</b> e risolvere
-                                                conflitti, garantendo
-                                                un flusso di lavoro organizzato e controllato.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Visual Studio Code</h5>
-                                            <p class="card-text">Utilizzo <b>Visual Studio Code</b> come editor
-                                                principale
-                                                per lo sviluppo, apprezzandone l’interfaccia intuitiva e le numerose
-                                                estensioni che facilitano la scrittura e il <b>debug</b> del
-                                                codice.<br>So
-                                                configurarlo per diversi linguaggi e ambienti, migliorando così
-                                                l’efficienza e la produttività durante il lavoro.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">WordPress</h5>
-                                            <p class="card-text">Ho esperienza nell’utilizzo di <b>WordPress</b> come
-                                                <b>CMS</b>
-                                                per la creazione e gestione di siti web, integrando il page builder
-                                                <b>Elementor</b> per realizzare layout personalizzati in modo semplice e
-                                                veloce, senza necessità di programmazione avanzata.<br>Sono in grado di
-                                                costruire pagine responsive e ottimizzate per una buona user experience.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
-                            type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
-                            type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">C#</h5>
+                        <p class="card-text">
+                          Conoscenze di base in <b>C#</b>, acquisite attraverso lo studio e l’esperienza pratica.<br>
+                          Ho familiarità con le fondamenta del linguaggio, come la sintassi, le strutture di controllo e
+                          le classi.
+                        </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
 
-
-                <div class="skill-container py-5">
-                    <div class="container text-center">
-                        <div class="row justify-content-center g-4">
-
-                            <!-- Soft Skills -->
-                            <div class="col-12 col-md-5 p-4 border rounded contorno">
-                                <h3 class="pb-4">Soft Skills</h3>
-
-                                <p><b>Comunicazione efficace</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 75%"></div>
-                                </div>
-
-                                <p class="mt-4"><b>Problem solving</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 45%"></div>
-                                </div>
-
-                                <p class="mt-4"><b>Teamwork</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 50%"></div>
-                                </div>
-
-                                <p class="mt-4"><b>Gestione del tempo</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 75%"></div>
-                                </div>
-                            </div>
-
-                            <!-- Competenze Linguistiche -->
-                            <div class="col-12 col-md-5 p-4 border rounded contorno">
-                                <h3 class="pb-4">Competenze Linguistiche</h3>
-
-                                <p><b>Albanese</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 100%"></div>
-                                </div>
-
-                                <p class="mt-4"><b>Italiano</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 100%"></div>
-                                </div>
-
-                                <p class="mt-4"><b>Inglese</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 75%"></div>
-                                </div>
-
-                                <p class="mt-4"><b>Spagnolo</b></p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 65%"></div>
-                                </div>
-                            </div>
-                        </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Card 4 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">Sviluppo Web</h5>
+                        <p class="card-text">
+                          Competenze nello sviluppo back-end con <b>ASP.NET Core MVC</b>, conoscenza dell’architettura
+                          <b>Model-View-Controller</b> e creazione di controller e viste.<br>
+                          Esperienza in analisi requisiti, documentazione <b>Markdown</b> e <b>Git</b> per
+                          versionamento.
+                        </p>
+                      </div>
                     </div>
+                  </div>
+                  <!-- Card 5 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">Persistenza Dati</h5>
+                        <p class="card-text">
+                          Basi nella gestione della persistenza dei dati con file <b>TXT</b>, <b>CSV</b> e
+                          <b>JSON</b>.<br>
+                          Comprensione di serializzazione e deserializzazione per gestire dati strutturati.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 6 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">Angular</h5>
+                        <p class="card-text">
+                          Prime esperienze con <b>Angular</b>, comprendendo componenti, moduli, routing e data
+                          binding.<br>
+                          Studio continuo per costruire interfacce scalabili.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Card 7 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">GitHub</h5>
+                        <p class="card-text">
+                          Utilizzo <b>GitHub</b> per gestire versionamento, collaborare su progetti e tenere traccia
+                          delle modifiche.<br>
+                          Conoscenza di <b>commit</b>, <b>branch</b>, <b>merge</b> e risoluzione conflitti.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 8 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">Visual Studio Code</h5>
+                        <p class="card-text">
+                          Uso quotidiano di <b>VS Code</b> per lo sviluppo, con estensioni per <b>debug</b>, linting,
+                          versionamento e supporto a più linguaggi.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 9 -->
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">WordPress</h5>
+                        <p class="card-text">
+                          Esperienza con <b>WordPress</b> come <b>CMS</b> e con <b>Elementor</b> per creare layout
+                          responsive senza codice complesso.<br>
+                          Buona gestione della UX e adattabilità mobile.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Frecce Carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Precedente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Successivo</span>
+            </button>
+          </div>
+
+
+
+          <div class="skill-container py-5">
+            <div class="container text-center">
+              <div class="row justify-content-center g-4">
+
+                <!-- Soft Skills -->
+                <div class="col-12 col-md-5 p-4 border rounded contorno">
+                  <h3 class="pb-4">Soft Skills</h3>
+
+                  <p><b>Comunicazione efficace</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+
+                  <p class="mt-4"><b>Problem solving</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 45%"></div>
+                  </div>
+
+                  <p class="mt-4"><b>Teamwork</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+
+                  <p class="mt-4"><b>Gestione del tempo</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
                 </div>
 
+                <!-- Competenze Linguistiche -->
+                <div class="col-12 col-md-5 p-4 border rounded contorno">
+                  <h3 class="pb-4">Competenze Linguistiche</h3>
+
+                  <p><b>Albanese</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+
+                  <p class="mt-4"><b>Italiano</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+
+                  <p class="mt-4"><b>Inglese</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+
+                  <p class="mt-4"><b>Spagnolo</b></p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="home-link mt-5"><a href="#home">Torna nella home</a></p>
+      </section>
 
 
-                <p class="home-link mt-5"><a href="#home">Torna nella home</a></p>
-            </section>
 
-
-
-            <section id="esperienze">
-                <div class="container py-5">
-                    <div class="text-center mb-4">
+      <!-- ESPERIENZE -->
+      <section id="esperienze" class="section-box">
+        <div class="text-center mb-4 section-title">
                         <i class="bi bi-reception-4 fs-3 me-2"></i>
-                        <h1 class="d-inline-block">Esperienze lavorative</h1>
-                    </div>
+                        <h1 class="h2 mb-0">Esperienze lavorative</h1>
+                    </div>     
 
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
@@ -553,8 +507,8 @@
                                     data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
                                     <div>
-                                        <h5 class="mb-1">Receptionist</h5>
-                                        <small><b>Hotel Ghironi</b> | La Spezia, Italia</small>
+                                        <span class="job-title">Receptionist</span>
+                                        <b>Hotel Ghironi</b> | La Spezia, Italia
                                     </div>
                                 </button>
                             </h2>
@@ -571,13 +525,14 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
                                     <div class="esperienza">
-                                        <h4>Receptionist e Booking Agent</h4> <b>Hotel Camilla</b> | Firenze, Italia
+                                        <span class="job-title">Receptionist e Booking Agent</span> <b>Hotel Camilla</b> | Firenze, Italia
                                     </div>
                                 </button>
                             </h2>
@@ -601,7 +556,7 @@
                                     data-bs-target="#flush-collapseThree" aria-expanded="false"
                                     aria-controls="flush-collapseThree">
                                     <div class="esperienza">
-                                        <h4>Receptionist</h4> <b>CSM Global Security Service (European University
+                                        <span class="job-title">Receptionist</span> <b>CSM Global Security Service (European University
                                             Institute)</b> | Firenze, Italia
                                     </div>
                                 </button>
@@ -625,7 +580,7 @@
                                     data-bs-target="#flush-collapseFour" aria-expanded="false"
                                     aria-controls="flush-collapseFour">
                                     <div class="esperienza">
-                                        <h4>Cameriera di Sala</h4> <b>I'Tuscani</b> | Firenze, Italia
+                                        <span class="job-title">Cameriera di Sala</span> <b>I'Tuscani</b> | Firenze, Italia
                                     </div>
                                 </button>
                             </h2>
@@ -647,7 +602,7 @@
                                     data-bs-target="#flush-collapseFive" aria-expanded="false"
                                     aria-controls="flush-collapseFive">
                                     <div class="esperienza">
-                                        <h4>Receptionist</h4> <b>The Student Hotel Florence (TSH)</b> | Firenze, Italia
+                                        <span class="job-title">Receptionist</span> <b>The Student Hotel Florence (TSH)</b> | Firenze, Italia
                                     </div>
                                 </button>
                             </h2>
@@ -670,7 +625,7 @@
                                     data-bs-target="#flush-collapseSix" aria-expanded="false"
                                     aria-controls="flush-collapseSix">
                                     <div class="esperienza">
-                                        <h4>Receptionist</h4> <b>La Notte Blu (B&B)</b> | Firenze, Italia
+                                        <span class="job-title">Receptionist</span> <b>La Notte Blu (B&B)</b> | Firenze, Italia
                                     </div>
                                 </button>
                             </h2>
@@ -687,71 +642,69 @@
                             </div>
                         </div>
 
-                    </div>
-
-                    <p class="home-link"><a href="#home">Torna nella home</a></p>
-            </section>
+        <p class="home-link"><a href="#home">Torna nella home</a></p>
+      </section>
 
 
-            <!-- Form per essere ricontatta -->
-            <section id="contatti">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="d-flex align-items-center gap-3">
-                        <i class="bi bi-envelope-exclamation me-2 fs-3"></i>
-                        <h1 class="mb-1">Contatti</h1>
-                    </div>
-                </div>
 
-                <p class="mt-4">Inserisci il tuo nome e il tuo indirizzo e-mail per essere ricontattato!</p>
-                <div id="form-container">
-                    <form class="row gy-2 gx-3 align-items-center" id="form">
-                        <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingInput">Nome e Cognome</label>
-                            <input type="text" class="form-control" id="autoSizingInput" placeholder="Mario Rossi">
-                        </div>
-                        <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingInputGroup">E-mail address</label>
-                            <div class="input-group">
-                                <div class="input-group-text">@</div>
-                                <input type="text" class="form-control" id="autoSizingInputGroup"
-                                    placeholder="E-mail address">
-                            </div>
-                        </div>
+      <!-- CONTATTI -->
+      <section id="contatti" class="section-box">
+        <div class="section-title">
+          <i class="bi bi-envelope-exclamation me-2 fs-4"></i>
+          <h1 class="h2 mb-0">Contatti</h1>
+        </div> 
 
-                        <div class="col-auto" id="contatto">
-
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-primary" id="invio"><b>Invio</b></button>
-
-                        </div>
-                    </form>
-                </div><br>
-                <p class="home-link"><a href="#home">Torna nella home</a></p>
-            </section>
-        </main>
-
-
-        <footer>
-            <div class="container py-4">
-                <div class="row justify-content-center gap-5">
-                    <div class="col-4 col-sm-3 col-md-2 text-center icone">
-                        <a href="https://github.com/Des-ara" target="_blank" class="text-black">
-                            <i class="bi bi-github fs-1"></i>
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-3 col-md-2 text-center icone">
-                        <a href="https://www.linkedin.com/in/desara-duka-947898182/" target="_blank" class="text-black">
-                            <i class="bi bi-linkedin fs-1"></i>
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-3 col-md-2 text-center icone">
-                        <a href="mailto:dukadesara@gmail.com" target="_blank" class="text-black">
-                            <i class="bi bi-envelope-at-fill fs-1 "></i>
-                        </a>
-                    </div>
-                </div>
+        <p class="mt-3 text-center">Inserisci il tuo nome e il tuo indirizzo e-mail per essere ricontattato!</p>
+        <form action="https://formspree.io/f/xyzdqegl" method="POST" class="row gy-2 gx-2 align-items-center justify-content-center" id="form">
+          <div class="col-12 col-sm-5">
+            <label class="visually-hidden" for="autoSizingInput">Nome e Cognome</label>
+            <input type="text" class="form-control" id="autoSizingInput" name="nome" placeholder="Mario Rossi">
+          </div>
+          <div class="col-12 col-sm-5">
+            <label class="visually-hidden" for="autoSizingInputGroup">E-mail</label>
+            <div class="input-group">
+              <div class="input-group-text">@</div>
+              <input type="email" class="form-control" id="autoSizingInputGroup" name="email" placeholder="nome@dominio.it">
             </div>
-        </footer>
-    </div>
+          </div>
+          <div id="contatto" class="col-12"></div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary" id="invio"><b>Invio</b></button>
+          </div>
+        </form>
+
+        <p class="home-link mt-3"><a href="#home">Torna nella home</a></p>
+      </section>
+
+    </main>
+
+    <footer class="mt-4">
+      <div class="container py-4">
+        <div class="row justify-content-center g-5">
+          <div class="col-auto text-center icone">
+            <a href="https://github.com/Des-ara" target="_blank" class="text-black" rel="noopener">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div class="col-auto text-center icone">
+            <a href="https://www.linkedin.com/in/desara-duka-947898182/" target="_blank" class="text-black"
+              rel="noopener">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div class="col-auto text-center icone">
+            <a href="mailto:dukadesara@gmail.com" class="text-black">
+              <i class="bi bi-envelope-at-fill fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"></script>
 </body>
+
+</html>
